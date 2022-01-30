@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	 xmlns:media="http://search.yahoo.com/mrss/" >
+	 
+<channel>
+	<title>Home Barista</title>
+	<atom:link href="https://homebarista.github.io/feed.rss" rel="self" type="application/rss+xml" />
+	<link>https://homebarista.github.io</link>
+	<description>The house of Home Barista - Provides news, brewing guides, and stories about coffee.</description>
+	<lastBuildDate>2022-01-30T00:20:16-08:00</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.6.2</generator>
+
+<image>
+	<url>https://homebarista.github.io/index_files/Icon_homebarista.png</url>
+	<title>Home Barista</title>
+	<link>https://homebarista.github.io</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>What Is Cortado?</title>
+		<link>https://homebarista.github.io/index.html</link>
+		<dc:creator><![CDATA[Alex]]></dc:creator>
+		<pubDate>2021-12-09T19:20:16-08:00</pubDate>
+		<category><![CDATA[Home Barista]]></category>
+		<guid isPermaLink="false">https://homebarista.github.io/index.html</guid>
+		<description><![CDATA[There are so many opinions on what Cortado is. Whether you are ordering a Cortado or offering it to your customers, there is much room for discussion. Nevertheless, it is still the main item on the coffee menu, but due to various factors, it may not exist for long.  <p class="read-more"> <a class="" href="https://homebarista.github.io/index.html"> <span class="screen-reader-text">What Is Cortado?</span> Read More >> </a></p>]]></description>
+	</item>
+			
+		
+		
+	</channel>
+</rss>
