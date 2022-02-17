@@ -23,5 +23,16 @@
      <news:title>Brew Coffee At Home: 11 Brewing Methods Compared</news:title>
     </news:news>
   </url>
+  <url>
+   <loc>https://homebarista.github.io/train-your-coffee-palate.html</loc>
+   <news:news>
+   <news:publication>
+     <news:name>Home Barista</news:name>
+     <news:language>en</news:language>
+   </news:publication>
+   <news:publication_date>2022-02-17</news:publication_date>
+     <news:title>Train Your Coffee Palate</news:title>
+    </news:news>
+  </url>
   
 </urlset>
