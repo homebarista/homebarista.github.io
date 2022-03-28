@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" version="XHTML+RDFa 1.0" dir="ltr" itemscope itemtype="http://schema.org/Article">
+<script type="text/javascript" async="" src="./index_files/analytics.js.download"></script><script async="" src="./index_files/icons.29.svg.js.download"></script><script async="" src="./index_files/page.js.download"></script><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(e){this.triggerEvents=e,this.eventOptions={passive:!0},this.userEventListener=this.triggerListener.bind(this),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventListener,e.eventOptions)))}_removeUserInteractionListener(e){this.triggerEvents.forEach((t=>window.removeEventListener(t,e.userEventListener,e.eventOptions)))}triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}async _loadEverythingNow(){this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async),await this._triggerDOMContentLoaded(),await this._triggerWindowLoad(),window.dispatchEvent(new Event("rocket-allScriptsLoaded"))}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._requestAnimFrame(),new Promise((t=>{const n=document.createElement("script");let i;[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type",i=e.nodeValue),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")&&this._isValidScriptType(i)?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t()),e.parentNode.replaceChild(n,e)}))}_isValidScriptType(e){return!e||""===e||"string"==typeof e&&["text/javascript","text/x-javascript","text/ecmascript","text/jscript","application/javascript","application/x-javascript","application/ecmascript","application/jscript","module"].includes(e.toLowerCase())}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){var e=document.createDocumentFragment();[...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async].forEach((t=>{const n=t.getAttribute("src");if(n){const t=document.createElement("link");t.href=n,t.rel="preload",t.as="script",e.appendChild(t)}})),document.head.appendChild(e)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._requestAnimFrame(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._requestAnimFrame(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._requestAnimFrame(),window.dispatchEvent(new Event("rocket-load")),await this._requestAnimFrame(),window.rocketonload&&window.rocketonload(),await this._requestAnimFrame(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),window.dispatchEvent(new Event("rocket-pageshow")),await this._requestAnimFrame(),window.rocketonpageshow&&window.rocketonpageshow()}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript;n||console.error("WPRocket unable to document.write this: "+t);const i=document.createRange(),r=n.parentElement;let a=e.get(n);void 0===a&&(a=n.nextSibling,e.set(n,a));const o=document.createDocumentFragment();i.setStart(o,0),o.appendChild(i.createContextualFragment(t)),r.insertBefore(o,a)}}async _requestAnimFrame(){return new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts(["keydown","mousemove","touchmove","touchstart","touchend","wheel"]);e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+
+<title>Trading Patterns Of Green Coffee Beans - Home Barista</title>
+<meta name="title" content="Trading Patterns Of Green Coffee Beans - Home Barista">
+<meta name="description" content="What is the trading model for green coffee beans? Whether you are a producer, a roaster, or a consumer, you can make a more informed choice if you know more about how it is bought and sold.">
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+<link rel="canonical" href="https://homebarista.github.io/trading-patterns-of-green-coffee-beans.html">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Trading Patterns Of Green Coffee Beans - Home Barista">
+<meta property="og:description" content="What is the trading model for green coffee beans? Whether you are a producer, a roaster, or a consumer, you can make a more informed choice if you know more about how it is bought and sold.">
+<meta property="og:url" content="https://homebarista.github.io/trading-patterns-of-green-coffee-beans.html">
+<meta property="og:site_name" content="Home Barista">
+<meta property="og:updated_time" content="2022-03-28T23:18:56-08:00">
+<meta property="og:image" content="./index_files/Trading-Patterns-Of-Green-Coffee-Beans.jpg">
+<meta property="og:image:secure_url" content="./index_files/Trading-Patterns-Of-Green-Coffee-Beans.jpg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="680">
+<meta property="og:image:alt" content="Trading Patterns Of Green Coffee Beans">
+<meta property="og:image:type" content="image/png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Trading Patterns Of Green Coffee Beans - Home Barista">
+<meta name="twitter:description" content="What is the trading model for green coffee beans? Whether you are a producer, a roaster, or a consumer, you can make a more informed choice if you know more about how it is bought and sold.">
+<meta name="twitter:site" content="@HomeBarista">
+<meta name="twitter:image" content="./index_files/Trading-Patterns-Of-Green-Coffee-Beans.jpg">
+
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" href="./index_files/frontend.min.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" media="all">
+<style id="astra-theme-css-inline-css">
+html{font-size:125%;}a,.page-title{color:#ff770f;}a:hover,a:focus{color:#3a3a3a;}body,button,input,select,textarea,.ast-button,.ast-custom-button{font-family:'Karla',sans-serif;font-weight:400;font-size:20px;font-size:1rem;line-height:1.7;}blockquote{color:#000000;}h1,.entry-content h1,h2,.entry-content h2,h3,.entry-content h3,h4,.entry-content h4,h5,.entry-content h5,h6,.entry-content h6,.site-title,.site-title a{font-family:'Aleo',serif;font-weight:700;}.site-title{font-size:26px;font-size:1.3rem;display:none;}header .custom-logo-link img{max-width:210px;}.astra-logo-svg{width:210px;}.ast-archive-description .ast-archive-title{font-size:40px;font-size:2rem;}.site-header .site-description{font-size:15px;font-size:0.75rem;display:none;}.entry-title{font-size:30px;font-size:1.5rem;}h1,.entry-content h1{font-size:64px;font-size:3.2rem;font-weight:700;font-family:'Aleo',serif;line-height:1.2;}h2,.entry-content h2{font-size:43px;font-size:2.15rem;font-weight:700;font-family:'Aleo',serif;line-height:1.2;}h3,.entry-content h3{font-size:26px;font-size:1.3rem;font-weight:700;font-family:'Aleo',serif;}h4,.entry-content h4{font-size:22px;font-size:1.1rem;}h5,.entry-content h5{font-size:20px;font-size:1rem;}h6,.entry-content h6{font-size:18px;font-size:0.9rem;}.ast-single-post .entry-title,.page-title{font-size:30px;font-size:1.5rem;}::selection{background-color:#ff770f;color:#000000;}body,h1,.entry-title a,.entry-content h1,h2,.entry-content h2,h3,.entry-content h3,h4,.entry-content h4,h5,.entry-content h5,h6,.entry-content h6{color:#000000;}.tagcloud a:hover,.tagcloud a:focus,.tagcloud a.current-item{color:#000000;border-color:#ff770f;background-color:#ff770f;}input:focus,input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="reset"]:focus,input[type="search"]:focus,textarea:focus{border-color:#ff770f;}input[type="radio"]:checked,input[type=reset],input[type="checkbox"]:checked,input[type="checkbox"]:hover:checked,input[type="checkbox"]:focus:checked,input[type=range]::-webkit-slider-thumb{border-color:#ff770f;background-color:#ff770f;box-shadow:none;}.site-footer a:hover + .post-count,.site-footer a:focus + .post-count{background:#ff770f;border-color:#ff770f;}.single .nav-links .nav-previous,.single .nav-links .nav-next{color:#ff770f;}.entry-meta,.entry-meta *{line-height:1.45;color:#ff770f;}.entry-meta a:hover,.entry-meta a:hover *,.entry-meta a:focus,.entry-meta a:focus *,.page-links > .page-link,.page-links .page-link:hover,.post-navigation a:hover{color:#3a3a3a;}.widget-title{font-size:28px;font-size:1.4rem;color:#000000;}#cat option,.secondary .calendar_wrap thead a,.secondary .calendar_wrap thead a:visited{color:#ff770f;}.secondary .calendar_wrap #today,.ast-progress-val span{background:#ff770f;}.secondary a:hover + .post-count,.secondary a:focus + .post-count{background:#ff770f;border-color:#ff770f;}.calendar_wrap #today > a{color:#000000;}.page-links .page-link,.single .post-navigation a{color:#ff770f;}.ast-header-break-point .main-header-bar .ast-button-wrap .menu-toggle{border-radius:3px;}.single .ast-author-details .author-title{color:#3a3a3a;}.ast-logo-title-inline .site-logo-img{padding-right:1em;}.site-logo-img img{ transition:all 0.2s linear;}.ast-page-builder-template .hentry {margin: 0;}.ast-page-builder-template .site-content > .ast-container {max-width: 100%;padding: 0;}.ast-page-builder-template .site-content #primary {padding: 0;margin: 0;}.ast-page-builder-template .no-results {text-align: center;margin: 4em auto;}.ast-page-builder-template .ast-pagination {padding: 2em;} .ast-page-builder-template .entry-header.ast-no-title.ast-no-thumbnail {margin-top: 0;}.ast-page-builder-template .entry-header.ast-header-without-markup {margin-top: 0;margin-bottom: 0;}.ast-page-builder-template .entry-header.ast-no-title.ast-no-meta {margin-bottom: 0;}.ast-page-builder-template.single .post-navigation {padding-bottom: 2em;}.ast-page-builder-template.single-post .site-content > .ast-container {max-width: 100%;}.ast-page-builder-template.single-post .site-content > .ast-container {max-width: 100%;}.ast-page-builder-template .entry-header {margin-top: 4em;margin-left: auto;margin-right: auto;padding-left: 20px;padding-right: 20px;}.ast-page-builder-template .ast-archive-description {margin-top: 4em;margin-left: auto;margin-right: auto;padding-left: 20px;padding-right: 20px;}.ast-page-builder-template.ast-no-sidebar .entry-content .alignwide {margin-left: 0;margin-right: 0;}.single.ast-page-builder-template .entry-header {padding-left: 20px;padding-right: 20px;}.ast-page-builder-template.ast-no-sidebar .entry-content .alignwide {margin-left: 0;margin-right: 0;}@media (max-width:921px){#ast-desktop-header{display:none;}}@media (min-width:921px){#ast-mobile-header{display:none;}}.wp-block-buttons.aligncenter{justify-content:center;}@media (max-width:782px){.entry-content .wp-block-columns .wp-block-column{margin-left:0px;}}@media (max-width:921px){.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single{padding:1.5em 2.14em;}.ast-separate-container #primary,.ast-separate-container #secondary{padding:1.5em 0;}#primary,#secondary{padding:1.5em 0;margin:0;}.ast-left-sidebar #content > .ast-container{display:flex;flex-direction:column-reverse;width:100%;}.ast-author-box img.avatar{margin:20px 0 0 0;}}@media (min-width:922px){.ast-separate-container.ast-right-sidebar #primary,.ast-separate-container.ast-left-sidebar #primary{border:0;}.search-no-results.ast-separate-container #primary{margin-bottom:4em;}}.elementor-button-wrapper .elementor-button{border-style:solid;border-top-width:0;border-right-width:0;border-left-width:0;border-bottom-width:0;}body .elementor-button.elementor-size-sm,body .elementor-button.elementor-size-xs,body .elementor-button.elementor-size-md,body .elementor-button.elementor-size-lg,body .elementor-button.elementor-size-xl,body .elementor-button{border-radius:30px;padding-top:16px;padding-right:40px;padding-bottom:16px;padding-left:40px;}.elementor-button-wrapper .elementor-button{border-color:#ff770f;background-color:#ff770f;}.elementor-button-wrapper .elementor-button:hover,.elementor-button-wrapper .elementor-button:focus{color:#141414;background-color:#ff8800;border-color:#ff8800;}.wp-block-button .wp-block-button__link,.elementor-button-wrapper .elementor-button,.elementor-button-wrapper .elementor-button:visited{color:#ffffff;}.elementor-button-wrapper .elementor-button{font-family:inherit;font-weight:inherit;line-height:1;}body .elementor-button.elementor-size-sm,body .elementor-button.elementor-size-xs,body .elementor-button.elementor-size-md,body .elementor-button.elementor-size-lg,body .elementor-button.elementor-size-xl,body .elementor-button{font-size:15px;font-size:0.75rem;}.wp-block-button .wp-block-button__link:hover,.wp-block-button .wp-block-button__link:focus{color:#141414;background-color:#ff8800;border-color:#ff8800;}.elementor-widget-heading h1.elementor-heading-title{line-height:1.2;}.elementor-widget-heading h2.elementor-heading-title{line-height:1.2;}.wp-block-button .wp-block-button__link{border-style:solid;border-top-width:0;border-right-width:0;border-left-width:0;border-bottom-width:0;border-color:#ff770f;background-color:#ff770f;color:#ffffff;font-family:inherit;font-weight:inherit;line-height:1;font-size:15px;font-size:0.75rem;border-radius:30px;padding-top:16px;padding-right:40px;padding-bottom:16px;padding-left:40px;}.menu-toggle,button,.ast-button,.ast-custom-button,.button,input#submit,input[type="button"],input[type="submit"],input[type="reset"]{border-style:solid;border-top-width:0;border-right-width:0;border-left-width:0;border-bottom-width:0;color:#ffffff;border-color:#ff770f;background-color:#ff770f;border-radius:30px;padding-top:16px;padding-right:40px;padding-bottom:16px;padding-left:40px;font-family:inherit;font-weight:inherit;font-size:15px;font-size:0.75rem;line-height:1;}button:focus,.menu-toggle:hover,button:hover,.ast-button:hover,.ast-custom-button:hover .button:hover,.ast-custom-button:hover ,input[type=reset]:hover,input[type=reset]:focus,input#submit:hover,input#submit:focus,input[type="button"]:hover,input[type="button"]:focus,input[type="submit"]:hover,input[type="submit"]:focus{color:#141414;background-color:#ff8800;border-color:#ff8800;}@media (min-width:544px){.ast-container{max-width:100%;}}@media (max-width:544px){.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single,.ast-separate-container .comments-title,.ast-separate-container .ast-archive-description{padding:1.5em 1em;}.ast-separate-container #content .ast-container{padding-left:0.54em;padding-right:0.54em;}.ast-separate-container .ast-comment-list li.depth-1{padding:1.5em 1em;margin-bottom:1.5em;}.ast-separate-container .ast-comment-list .bypostauthor{padding:.5em;}.ast-search-menu-icon.ast-dropdown-active .search-field{width:170px;}}@media (max-width:921px){.ast-mobile-header-stack .main-header-bar .ast-search-menu-icon{display:inline-block;}.ast-header-break-point.ast-header-custom-item-outside .ast-mobile-header-stack .main-header-bar .ast-search-icon{margin:0;}.ast-comment-avatar-wrap img{max-width:2.5em;}.ast-separate-container .ast-comment-list li.depth-1{padding:1.5em 2.14em;}.ast-separate-container .comment-respond{padding:2em 2.14em;}.ast-comment-meta{padding:0 1.8888em 1.3333em;}}@media (max-width:921px){.site-title{display:none;}.ast-archive-description .ast-archive-title{font-size:40px;}.site-header .site-description{display:none;}.entry-title{font-size:30px;}h1,.entry-content h1{font-size:58px;}h2,.entry-content h2{font-size:40px;}h3,.entry-content h3{font-size:28px;}h4,.entry-content h4{font-size:22px;font-size:1.1rem;}.ast-single-post .entry-title,.page-title{font-size:30px;}.astra-logo-svg{width:210px;}header .custom-logo-link img,.ast-header-break-point .site-logo-img .custom-mobile-logo-link img{max-width:210px;}}@media (max-width:544px){.site-title{display:none;}.ast-archive-description .ast-archive-title{font-size:40px;}.site-header .site-description{display:none;}.entry-title{font-size:30px;}h1,.entry-content h1{font-size:44px;}h2,.entry-content h2{font-size:25px;}h3,.entry-content h3{font-size:20px;}.ast-single-post .entry-title,.page-title{font-size:30px;}.ast-header-break-point .site-branding img,.ast-header-break-point .custom-logo-link img{max-width:160px;}.astra-logo-svg{width:160px;}.ast-header-break-point .site-logo-img .custom-mobile-logo-link img{max-width:160px;}}@media (max-width:921px){html{font-size:114%;}}@media (max-width:544px){html{font-size:114%;}}@media (min-width:922px){.ast-container{max-width:1240px;}}@font-face {font-family: "Astra";src: url(./index_files/astra.woff) format("woff"),url(./index_files/astra.ttf) format("truetype"),url(./index_files/astra.svg#astra) format("svg");font-weight: normal;font-style: normal;font-display: fallback;}@media (min-width:922px){.main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu:hover > .sub-menu,.main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu.focus > .sub-menu{margin-left:-0px;}}.astra-icon-down_arrow::after {content: "\e900";font-family: Astra;}.astra-icon-close::after {content: "\e5cd";font-family: Astra;}.astra-icon-drag_handle::after {content: "\e25d";font-family: Astra;}.astra-icon-format_align_justify::after {content: "\e235";font-family: Astra;}.astra-icon-menu::after {content: "\e5d2";font-family: Astra;}.astra-icon-reorder::after {content: "\e8fe";font-family: Astra;}.astra-icon-search::after {content: "\e8b6";font-family: Astra;}.astra-icon-zoom_in::after {content: "\e56b";font-family: Astra;}.astra-icon-check-circle::after {content: "\e901";font-family: Astra;}.astra-icon-shopping-cart::after {content: "\f07a";font-family: Astra;}.astra-icon-shopping-bag::after {content: "\f290";font-family: Astra;}.astra-icon-shopping-basket::after {content: "\f291";font-family: Astra;}.astra-icon-circle-o::after {content: "\e903";font-family: Astra;}.astra-icon-certificate::after {content: "\e902";font-family: Astra;}.ast-breadcrumbs .trail-browse,.ast-breadcrumbs .trail-items,.ast-breadcrumbs .trail-items li{display:inline-block;margin:0;padding:0;border:none;background:inherit;text-indent:0;}.ast-breadcrumbs .trail-browse{font-size:inherit;font-style:inherit;font-weight:inherit;color:inherit;}.ast-breadcrumbs .trail-items{list-style:none;}.trail-items li::after{padding:0 0.3em;content:"\00bb";}.trail-items li:last-of-type::after{display:none;}h1,.entry-content h1,h2,.entry-content h2,h3,.entry-content h3,h4,.entry-content h4,h5,.entry-content h5,h6,.entry-content h6{color:#0a0a0a;}@media (max-width:921px){.ast-builder-grid-row-container.ast-builder-grid-row-tablet-3-firstrow .ast-builder-grid-row > *:first-child,.ast-builder-grid-row-container.ast-builder-grid-row-tablet-3-lastrow .ast-builder-grid-row > *:last-child{grid-column:1 / -1;}}@media (max-width:544px){.ast-builder-grid-row-container.ast-builder-grid-row-mobile-3-firstrow .ast-builder-grid-row > *:first-child,.ast-builder-grid-row-container.ast-builder-grid-row-mobile-3-lastrow .ast-builder-grid-row > *:last-child{grid-column:1 / -1;}}.elementor-widget-heading .elementor-heading-title{margin:0;}.elementor-post.elementor-grid-item.hentry{margin-bottom:0;}.woocommerce div.product .elementor-element.elementor-products-grid .related.products ul.products li.product,.elementor-element .elementor-wc-products .woocommerce[class*='columns-'] ul.products li.product{width:auto;margin:0;float:none;}.ast-left-sidebar .elementor-section.elementor-section-stretched,.ast-right-sidebar .elementor-section.elementor-section-stretched{max-width:100%;left:0 !important;}.elementor-template-full-width .ast-container{display:block;}.ast-desktop .ast-mobile-popup-drawer.active .ast-mobile-popup-inner{max-width:35%;}@media (max-width:921px){.ast-mobile-popup-drawer.active .ast-mobile-popup-inner{max-width:90%;}}@media (max-width:544px){.ast-mobile-popup-drawer.active .ast-mobile-popup-inner{max-width:90%;}}.ast-header-break-point .main-header-bar{border-bottom-width:0;}@media (min-width:922px){.main-header-bar{border-bottom-width:0;}}.ast-safari-browser-less-than-11 .main-header-menu .menu-item,.ast-safari-browser-less-than-11 .main-header-bar .ast-masthead-custom-menu-items{display:block;}.main-header-menu .menu-item,#astra-footer-menu .menu-item,.main-header-bar .ast-masthead-custom-menu-items{-js-display:flex;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-moz-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-moz-box-orient:vertical;-moz-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}.main-header-menu > .menu-item > .menu-link,#astra-footer-menu > .menu-item > .menu-link,{height:100%;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;-js-display:flex;display:flex;}.main-header-menu .sub-menu .menu-item.menu-item-has-children > .menu-link:after{position:absolute;right:1em;top:50%;transform:translate(0,-50%) rotate(270deg);}.ast-header-break-point .main-header-bar .main-header-bar-navigation .page_item_has_children > .ast-menu-toggle::before,.ast-header-break-point .main-header-bar .main-header-bar-navigation .menu-item-has-children > .ast-menu-toggle::before,.ast-mobile-popup-drawer .main-header-bar-navigation .menu-item-has-children>.ast-menu-toggle::before,.ast-header-break-point .ast-mobile-header-wrap .main-header-bar-navigation .menu-item-has-children > .ast-menu-toggle::before{font-weight:bold;content:"\e900";font-family:Astra;text-decoration:inherit;display:inline-block;}.ast-header-break-point .main-navigation ul.sub-menu .menu-item .menu-link:before{content:"\e900";font-family:Astra;font-size:.65em;text-decoration:inherit;display:inline-block;transform:translate(0,-2px) rotateZ(270deg);margin-right:5px;}.widget_search .search-form:after{font-family:Astra;font-size:1.2em;font-weight:normal;content:"\e8b6";position:absolute;top:50%;right:15px;transform:translate(0,-50%);}.astra-search-icon::before{content:"\e8b6";font-family:Astra;font-style:normal;font-weight:normal;text-decoration:inherit;text-align:center;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}.main-header-bar .main-header-bar-navigation .page_item_has_children > a:after,.main-header-bar .main-header-bar-navigation .menu-item-has-children > a:after,.site-header-focus-item .main-header-bar-navigation .menu-item-has-children > .menu-link:after{content:"\e900";display:inline-block;font-family:Astra;font-size:.6rem;font-weight:bold;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;margin-left:10px;line-height:normal;}.ast-mobile-popup-drawer .main-header-bar-navigation .ast-submenu-expanded>.ast-menu-toggle::before{transform:rotateX(180deg);}.ast-header-break-point .main-header-bar-navigation .menu-item-has-children > .menu-link:after{display:none;}.ast-mobile-header-content > *,.ast-desktop-header-content > * {padding: 10px 0;height: auto;}.ast-mobile-header-content > *:first-child,.ast-desktop-header-content > *:first-child {padding-top: 10px;}.ast-mobile-header-content > .ast-builder-menu,.ast-desktop-header-content > .ast-builder-menu {padding-top: 0;}.ast-mobile-header-content > *:last-child,.ast-desktop-header-content > *:last-child {padding-bottom: 0;}.ast-mobile-header-content .ast-search-menu-icon.ast-inline-search label,.ast-desktop-header-content .ast-search-menu-icon.ast-inline-search label {width: 100%;}.ast-desktop-header-content .main-header-bar-navigation .ast-submenu-expanded > .ast-menu-toggle::before {transform: rotateX(180deg);}#ast-desktop-header .ast-desktop-header-content,.ast-mobile-header-content .ast-search-icon,.ast-desktop-header-content .ast-search-icon,.ast-mobile-header-wrap .ast-mobile-header-content,.ast-main-header-nav-open.ast-popup-nav-open .ast-mobile-header-wrap .ast-mobile-header-content,.ast-main-header-nav-open.ast-popup-nav-open .ast-desktop-header-content {display: none;}.ast-main-header-nav-open.ast-header-break-point #ast-desktop-header .ast-desktop-header-content,.ast-main-header-nav-open.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content {display: block;}.ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-up > .menu-item > .sub-menu,.ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-up > .menu-item .menu-item > .sub-menu,.ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-down > .menu-item > .sub-menu,.ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-down > .menu-item .menu-item > .sub-menu,.ast-desktop .ast-desktop-header-content .astra-menu-animation-fade > .menu-item > .sub-menu,.ast-desktop .ast-desktop-header-content .astra-menu-animation-fade > .menu-item .menu-item > .sub-menu {opacity: 1;visibility: visible;}.ast-hfb-header.ast-default-menu-enable.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content .main-header-bar-navigation {width: unset;margin: unset;}.ast-mobile-header-content.content-align-flex-end .main-header-bar-navigation .menu-item-has-children > .ast-menu-toggle,.ast-desktop-header-content.content-align-flex-end .main-header-bar-navigation .menu-item-has-children > .ast-menu-toggle {left: calc( 20px - 0.907em);}.ast-mobile-header-content .ast-search-menu-icon,.ast-mobile-header-content .ast-search-menu-icon.slide-search,.ast-desktop-header-content .ast-search-menu-icon,.ast-desktop-header-content .ast-search-menu-icon.slide-search {width: 100%;position: relative;display: block;right: auto;transform: none;}.ast-mobile-header-content .ast-search-menu-icon.slide-search .search-form,.ast-mobile-header-content .ast-search-menu-icon .search-form,.ast-desktop-header-content .ast-search-menu-icon.slide-search .search-form,.ast-desktop-header-content .ast-search-menu-icon .search-form {right: 0;visibility: visible;opacity: 1;position: relative;top: auto;transform: none;padding: 0;display: block;overflow: hidden;}.ast-mobile-header-content .ast-search-menu-icon.ast-inline-search .search-field,.ast-mobile-header-content .ast-search-menu-icon .search-field,.ast-desktop-header-content .ast-search-menu-icon.ast-inline-search .search-field,.ast-desktop-header-content .ast-search-menu-icon .search-field {width: 100%;padding-right: 5.5em;}.ast-mobile-header-content .ast-search-menu-icon .search-submit,.ast-desktop-header-content .ast-search-menu-icon .search-submit {display: block;position: absolute;height: 100%;top: 0;right: 0;padding: 0 1em;border-radius: 0;}.ast-hfb-header.ast-default-menu-enable.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content .main-header-bar-navigation ul .sub-menu .menu-link {padding-left: 30px;}.ast-hfb-header.ast-default-menu-enable.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content .main-header-bar-navigation .sub-menu .menu-item .menu-item .menu-link {padding-left: 40px;}.ast-mobile-popup-drawer.active .ast-mobile-popup-inner{background-color:#ffffff;;}.ast-mobile-header-wrap .ast-mobile-header-content,.ast-desktop-header-content{background-color:#ffffff;;}.ast-mobile-popup-content > *,.ast-mobile-header-content > *,.ast-desktop-popup-content > *,.ast-desktop-header-content > *{padding-top:0;padding-bottom:0;}.content-align-flex-start .ast-builder-layout-element{justify-content:flex-start;}.content-align-flex-start .main-header-menu{text-align:left;}.ast-mobile-popup-drawer.active .ast-mobile-popup-drawer.active .menu-toggle-close{color:#3a3a3a;}.ast-desktop .astra-menu-animation-slide-up>.menu-item>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-up>.menu-item>.sub-menu,.ast-desktop .astra-menu-animation-slide-up>.menu-item>.sub-menu .sub-menu{opacity:0;visibility:hidden;transform:translateY(.5em);transition:visibility .2s ease,transform .2s ease}.ast-desktop .astra-menu-animation-slide-up>.menu-item .menu-item.focus>.sub-menu,.ast-desktop .astra-menu-animation-slide-up>.menu-item .menu-item:hover>.sub-menu,.ast-desktop .astra-menu-animation-slide-up>.menu-item.focus>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-up>.menu-item.focus>.sub-menu,.ast-desktop .astra-menu-animation-slide-up>.menu-item:hover>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-up>.menu-item:hover>.sub-menu{opacity:1;visibility:visible;transform:translateY(0);transition:opacity .2s ease,visibility .2s ease,transform .2s ease}.ast-desktop .astra-menu-animation-slide-up>.full-width-mega.menu-item.focus>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-up>.full-width-mega.menu-item:hover>.astra-full-megamenu-wrapper{-js-display:flex;display:flex}.ast-desktop .astra-menu-animation-slide-down>.menu-item>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-down>.menu-item>.sub-menu,.ast-desktop .astra-menu-animation-slide-down>.menu-item>.sub-menu .sub-menu{opacity:0;visibility:hidden;transform:translateY(-.5em);transition:visibility .2s ease,transform .2s ease}.ast-desktop .astra-menu-animation-slide-down>.menu-item .menu-item.focus>.sub-menu,.ast-desktop .astra-menu-animation-slide-down>.menu-item .menu-item:hover>.sub-menu,.ast-desktop .astra-menu-animation-slide-down>.menu-item.focus>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-down>.menu-item.focus>.sub-menu,.ast-desktop .astra-menu-animation-slide-down>.menu-item:hover>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-down>.menu-item:hover>.sub-menu{opacity:1;visibility:visible;transform:translateY(0);transition:opacity .2s ease,visibility .2s ease,transform .2s ease}.ast-desktop .astra-menu-animation-slide-down>.full-width-mega.menu-item.focus>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-slide-down>.full-width-mega.menu-item:hover>.astra-full-megamenu-wrapper{-js-display:flex;display:flex}.ast-desktop .astra-menu-animation-fade>.menu-item>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-fade>.menu-item>.sub-menu,.ast-desktop .astra-menu-animation-fade>.menu-item>.sub-menu .sub-menu{opacity:0;visibility:hidden;transition:opacity ease-in-out .3s}.ast-desktop .astra-menu-animation-fade>.menu-item .menu-item.focus>.sub-menu,.ast-desktop .astra-menu-animation-fade>.menu-item .menu-item:hover>.sub-menu,.ast-desktop .astra-menu-animation-fade>.menu-item.focus>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-fade>.menu-item.focus>.sub-menu,.ast-desktop .astra-menu-animation-fade>.menu-item:hover>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-fade>.menu-item:hover>.sub-menu{opacity:1;visibility:visible;transition:opacity ease-in-out .3s}.ast-desktop .astra-menu-animation-fade>.full-width-mega.menu-item.focus>.astra-full-megamenu-wrapper,.ast-desktop .astra-menu-animation-fade>.full-width-mega.menu-item:hover>.astra-full-megamenu-wrapper{-js-display:flex;display:flex}
+</style>
+<link data-minify="1" rel="stylesheet" href="./index_files/astra-local-fonts.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" media="all">
+<link data-minify="1" rel="stylesheet" href="./index_files/cookie-law-info-public.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" media="all">
+<link data-minify="1" rel="stylesheet" href="./index_files/cookie-law-info-gdpr.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" media="all">
+<link data-minify="1" rel="stylesheet" href="./index_files/style.min.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" media="all">
+<link rel="stylesheet" href="./index_files/screen.min.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" media="all">
+<style id="ez-toc-inline-css">
+div#ez-toc-container p.ez-toc-title {font-size: 120%;}div#ez-toc-container p.ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}
+</style>
+<link data-minify="1" rel="stylesheet" href="./index_files/astra-addon-60e3008d943a37-58818663.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" media="all">
+<style id="astra-addon-css-inline-css">
+#content:before{content:"921";position:absolute;overflow:hidden;opacity:0;visibility:hidden;}.single .ast-author-details .author-title{color:#ff770f;}@media (max-width:921px){.single.ast-separate-container .ast-author-meta{padding:1.5em 2.14em;}.single .ast-author-meta .post-author-avatar{margin-bottom:1em;}.ast-separate-container .ast-grid-2 .ast-article-post,.ast-separate-container .ast-grid-3 .ast-article-post,.ast-separate-container .ast-grid-4 .ast-article-post{width:100%;}.blog-layout-1 .post-content,.blog-layout-1 .ast-blog-featured-section{float:none;}.ast-separate-container .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .square .posted-on{margin-top:0;}.ast-separate-container .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .circle .posted-on{margin-top:1em;}.ast-separate-container .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-content .ast-blog-featured-section:first-child .post-thumb-img-content{margin-top:-1.5em;}.ast-separate-container .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-thumb-img-content{margin-left:-2.14em;margin-right:-2.14em;}.ast-separate-container .ast-article-single.remove-featured-img-padding .single-layout-1 .entry-header .post-thumb-img-content:first-child{margin-top:-1.5em;}.ast-separate-container .ast-article-single.remove-featured-img-padding .single-layout-1 .post-thumb-img-content{margin-left:-2.14em;margin-right:-2.14em;}.ast-separate-container.ast-blog-grid-2 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .square .posted-on,.ast-separate-container.ast-blog-grid-3 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .square .posted-on,.ast-separate-container.ast-blog-grid-4 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .square .posted-on{margin-left:-1.5em;margin-right:-1.5em;}.ast-separate-container.ast-blog-grid-2 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .circle .posted-on,.ast-separate-container.ast-blog-grid-3 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .circle .posted-on,.ast-separate-container.ast-blog-grid-4 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .circle .posted-on{margin-left:-0.5em;margin-right:-0.5em;}.ast-separate-container.ast-blog-grid-2 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .square .posted-on,.ast-separate-container.ast-blog-grid-3 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .square .posted-on,.ast-separate-container.ast-blog-grid-4 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .square .posted-on{margin-top:0;}.ast-separate-container.ast-blog-grid-2 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .circle .posted-on,.ast-separate-container.ast-blog-grid-3 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .circle .posted-on,.ast-separate-container.ast-blog-grid-4 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .circle .posted-on{margin-top:1em;}.ast-separate-container.ast-blog-grid-2 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-content .ast-blog-featured-section:first-child .post-thumb-img-content,.ast-separate-container.ast-blog-grid-3 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-content .ast-blog-featured-section:first-child .post-thumb-img-content,.ast-separate-container.ast-blog-grid-4 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-content .ast-blog-featured-section:first-child .post-thumb-img-content{margin-top:-1.5em;}.ast-separate-container.ast-blog-grid-2 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-thumb-img-content,.ast-separate-container.ast-blog-grid-3 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-thumb-img-content,.ast-separate-container.ast-blog-grid-4 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-thumb-img-content{margin-left:-1.5em;margin-right:-1.5em;}.blog-layout-2{display:flex;flex-direction:column-reverse;}.ast-separate-container .blog-layout-3,.ast-separate-container .blog-layout-1{display:block;}.ast-plain-container .ast-grid-2 .ast-article-post,.ast-plain-container .ast-grid-3 .ast-article-post,.ast-plain-container .ast-grid-4 .ast-article-post,.ast-page-builder-template .ast-grid-2 .ast-article-post,.ast-page-builder-template .ast-grid-3 .ast-article-post,.ast-page-builder-template .ast-grid-4 .ast-article-post{width:100%;}}@media (max-width:921px){.ast-separate-container .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .square .posted-on{margin-top:0;margin-left:-2.14em;}.ast-separate-container .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .circle .posted-on{margin-top:0;margin-left:-1.14em;}}@media (min-width:922px){.single .ast-author-meta .ast-author-details{display:flex;}.ast-separate-container.ast-blog-grid-2 .ast-archive-description,.ast-separate-container.ast-blog-grid-3 .ast-archive-description,.ast-separate-container.ast-blog-grid-4 .ast-archive-description{margin-bottom:1.33333em;}.blog-layout-2.ast-no-thumb .post-content,.blog-layout-3.ast-no-thumb .post-content{width:calc(100% - 5.714285714em);}.blog-layout-2.ast-no-thumb.ast-no-date-box .post-content,.blog-layout-3.ast-no-thumb.ast-no-date-box .post-content{width:100%;}.ast-separate-container .ast-grid-2 .ast-article-post.ast-separate-posts,.ast-separate-container .ast-grid-3 .ast-article-post.ast-separate-posts,.ast-separate-container .ast-grid-4 .ast-article-post.ast-separate-posts{border-bottom:0;}.ast-separate-container .ast-grid-2 > .site-main > .ast-row,.ast-separate-container .ast-grid-3 > .site-main > .ast-row,.ast-separate-container .ast-grid-4 > .site-main > .ast-row{margin-left:-1em;margin-right:-1em;display:flex;flex-flow:row wrap;align-items:stretch;}.ast-separate-container .ast-grid-2 > .site-main > .ast-row:before,.ast-separate-container .ast-grid-2 > .site-main > .ast-row:after,.ast-separate-container .ast-grid-3 > .site-main > .ast-row:before,.ast-separate-container .ast-grid-3 > .site-main > .ast-row:after,.ast-separate-container .ast-grid-4 > .site-main > .ast-row:before,.ast-separate-container .ast-grid-4 > .site-main > .ast-row:after{flex-basis:0;width:0;}.ast-separate-container .ast-grid-2 .ast-article-post,.ast-separate-container .ast-grid-3 .ast-article-post,.ast-separate-container .ast-grid-4 .ast-article-post{display:flex;padding:0;}.ast-plain-container .ast-grid-2 > .site-main > .ast-row,.ast-plain-container .ast-grid-3 > .site-main > .ast-row,.ast-plain-container .ast-grid-4 > .site-main > .ast-row,.ast-page-builder-template .ast-grid-2 > .site-main > .ast-row,.ast-page-builder-template .ast-grid-3 > .site-main > .ast-row,.ast-page-builder-template .ast-grid-4 > .site-main > .ast-row{margin-left:-1em;margin-right:-1em;display:flex;flex-flow:row wrap;align-items:stretch;}.ast-plain-container .ast-grid-2 > .site-main > .ast-row:before,.ast-plain-container .ast-grid-2 > .site-main > .ast-row:after,.ast-plain-container .ast-grid-3 > .site-main > .ast-row:before,.ast-plain-container .ast-grid-3 > .site-main > .ast-row:after,.ast-plain-container .ast-grid-4 > .site-main > .ast-row:before,.ast-plain-container .ast-grid-4 > .site-main > .ast-row:after,.ast-page-builder-template .ast-grid-2 > .site-main > .ast-row:before,.ast-page-builder-template .ast-grid-2 > .site-main > .ast-row:after,.ast-page-builder-template .ast-grid-3 > .site-main > .ast-row:before,.ast-page-builder-template .ast-grid-3 > .site-main > .ast-row:after,.ast-page-builder-template .ast-grid-4 > .site-main > .ast-row:before,.ast-page-builder-template .ast-grid-4 > .site-main > .ast-row:after{flex-basis:0;width:0;}.ast-plain-container .ast-grid-2 .ast-article-post,.ast-plain-container .ast-grid-3 .ast-article-post,.ast-plain-container .ast-grid-4 .ast-article-post,.ast-page-builder-template .ast-grid-2 .ast-article-post,.ast-page-builder-template .ast-grid-3 .ast-article-post,.ast-page-builder-template .ast-grid-4 .ast-article-post{display:flex;}.ast-plain-container .ast-grid-2 .ast-article-post:last-child,.ast-plain-container .ast-grid-3 .ast-article-post:last-child,.ast-plain-container .ast-grid-4 .ast-article-post:last-child,.ast-page-builder-template .ast-grid-2 .ast-article-post:last-child,.ast-page-builder-template .ast-grid-3 .ast-article-post:last-child,.ast-page-builder-template .ast-grid-4 .ast-article-post:last-child{margin-bottom:2.5em;}}@media (min-width:922px){.single .post-author-avatar,.single .post-author-bio{float:left;clear:right;}.single .ast-author-meta .post-author-avatar{margin-right:1.33333em;}.single .ast-author-meta .about-author-title-wrapper,.single .ast-author-meta .post-author-bio{text-align:left;}.blog-layout-2 .post-content{padding-right:2em;}.blog-layout-2.ast-no-date-box.ast-no-thumb .post-content{padding-right:0;}.blog-layout-3 .post-content{padding-left:2em;}.blog-layout-3.ast-no-date-box.ast-no-thumb .post-content{padding-left:0;}.ast-separate-container .ast-grid-2 .ast-article-post.ast-separate-posts:nth-child(2n+0),.ast-separate-container .ast-grid-2 .ast-article-post.ast-separate-posts:nth-child(2n+1),.ast-separate-container .ast-grid-3 .ast-article-post.ast-separate-posts:nth-child(2n+0),.ast-separate-container .ast-grid-3 .ast-article-post.ast-separate-posts:nth-child(2n+1),.ast-separate-container .ast-grid-4 .ast-article-post.ast-separate-posts:nth-child(2n+0),.ast-separate-container .ast-grid-4 .ast-article-post.ast-separate-posts:nth-child(2n+1){padding:0 1em 0;}}@media (max-width:544px){.ast-separate-container .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .circle .posted-on{margin-top:0.5em;}.ast-separate-container .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-thumb-img-content,.ast-separate-container .ast-article-single.remove-featured-img-padding .single-layout-1 .post-thumb-img-content,.ast-separate-container.ast-blog-grid-2 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .square .posted-on,.ast-separate-container.ast-blog-grid-3 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .square .posted-on,.ast-separate-container.ast-blog-grid-4 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .square .posted-on{margin-left:-1em;margin-right:-1em;}.ast-separate-container.ast-blog-grid-2 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .circle .posted-on,.ast-separate-container.ast-blog-grid-3 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .circle .posted-on,.ast-separate-container.ast-blog-grid-4 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .circle .posted-on{margin-left:-0.5em;margin-right:-0.5em;}.ast-separate-container.ast-blog-grid-2 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .circle .posted-on,.ast-separate-container.ast-blog-grid-3 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .circle .posted-on,.ast-separate-container.ast-blog-grid-4 .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section:first-child .circle .posted-on{margin-top:0.5em;}.ast-separate-container.ast-blog-grid-2 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-content .ast-blog-featured-section:first-child .post-thumb-img-content,.ast-separate-container.ast-blog-grid-3 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-content .ast-blog-featured-section:first-child .post-thumb-img-content,.ast-separate-container.ast-blog-grid-4 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-content .ast-blog-featured-section:first-child .post-thumb-img-content{margin-top:-1.33333em;}.ast-separate-container.ast-blog-grid-2 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-thumb-img-content,.ast-separate-container.ast-blog-grid-3 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-thumb-img-content,.ast-separate-container.ast-blog-grid-4 .ast-article-post.remove-featured-img-padding .blog-layout-1 .post-thumb-img-content{margin-left:-1em;margin-right:-1em;}.ast-separate-container .ast-grid-2 .ast-article-post .blog-layout-1,.ast-separate-container .ast-grid-2 .ast-article-post .blog-layout-2,.ast-separate-container .ast-grid-2 .ast-article-post .blog-layout-3{padding:1.33333em 1em;}.ast-separate-container .ast-grid-3 .ast-article-post .blog-layout-1,.ast-separate-container .ast-grid-4 .ast-article-post .blog-layout-1{padding:1.33333em 1em;}.single.ast-separate-container .ast-author-meta{padding:1.5em 1em;}}@media (max-width:544px){.ast-separate-container .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .square .posted-on{margin-left:-1em;}.ast-separate-container .ast-article-post.remove-featured-img-padding.has-post-thumbnail .blog-layout-1 .post-content .ast-blog-featured-section .circle .posted-on{margin-left:-0.5em;}}.ast-article-post .ast-date-meta .posted-on,.ast-article-post .ast-date-meta .posted-on *{background:#ff770f;color:#000000;}.ast-article-post .ast-date-meta .posted-on .date-month,.ast-article-post .ast-date-meta .posted-on .date-year{color:#000000;}.ast-load-more:hover{color:#000000;border-color:#ff770f;background-color:#ff770f;}.ast-loader > div{background-color:#ff770f;}.ast-separate-container .blog-layout-1,.ast-separate-container .blog-layout-2,.ast-separate-container .blog-layout-3{background-color:transparent;background-image:none;}.ast-separate-container .ast-article-post{background-color:#ffffff;;}@media (max-width:921px){.ast-separate-container .ast-article-post{background-color:#ffffff;;}}@media (max-width:544px){.ast-separate-container .ast-article-post{background-color:#ffffff;;}}.ast-separate-container .ast-article-single:not(.ast-related-post),.ast-separate-container .comment-respond,.ast-separate-container .ast-comment-list li,.ast-separate-container .ast-woocommerce-container,.ast-separate-container .error-404,.ast-separate-container .no-results,.single.ast-separate-container .ast-author-meta,.ast-separate-container .related-posts-title-wrapper,.ast-separate-container.ast-two-container #secondary .widget,.ast-separate-container .comments-count-wrapper,.ast-box-layout.ast-plain-container .site-content,.ast-padded-layout.ast-plain-container .site-content{background-color:#ffffff;;}@media (max-width:921px){.ast-separate-container .ast-article-single:not(.ast-related-post),.ast-separate-container .comment-respond,.ast-separate-container .ast-comment-list li,.ast-separate-container .ast-woocommerce-container,.ast-separate-container .error-404,.ast-separate-container .no-results,.single.ast-separate-container .ast-author-meta,.ast-separate-container .related-posts-title-wrapper,.ast-separate-container.ast-two-container #secondary .widget,.ast-separate-container .comments-count-wrapper,.ast-box-layout.ast-plain-container .site-content,.ast-padded-layout.ast-plain-container .site-content{background-color:#ffffff;;}}@media (max-width:544px){.ast-separate-container .ast-article-single:not(.ast-related-post),.ast-separate-container .comment-respond,.ast-separate-container .ast-comment-list li,.ast-separate-container .ast-woocommerce-container,.ast-separate-container .error-404,.ast-separate-container .no-results,.single.ast-separate-container .ast-author-meta,.ast-separate-container .related-posts-title-wrapper,.ast-separate-container.ast-two-container #secondary .widget,.ast-separate-container .comments-count-wrapper,.ast-box-layout.ast-plain-container .site-content,.ast-padded-layout.ast-plain-container .site-content{background-color:#ffffff;;}}.ast-header-search .ast-search-menu-icon .search-field{border-radius:2px;}.ast-header-search .ast-search-menu-icon .search-submit{border-radius:2px;}.ast-header-search .ast-search-menu-icon .search-form{border-top-width:1px;border-bottom-width:1px;border-left-width:1px;border-right-width:1px;border-color:#ddd;border-radius:2px;}@media (max-width:921px){.ast-header-break-point .ast-header-search .ast-search-menu-icon .search-form .search-field{height:px;}}@media (max-width:544px){.ast-header-break-point .ast-header-search .ast-search-menu-icon .search-form .search-field{height:px;}}@media (min-width:922px){.ast-container{max-width:1240px;}}@media (min-width:993px){.ast-container{max-width:1240px;}}@media (min-width:1201px){.ast-container{max-width:1240px;}}.ast-above-header,.main-header-bar,.ast-below-header {-webkit-transition: all 0.2s linear;transition: all 0.2s linear;}.ast-above-header,.main-header-bar,.ast-below-header {max-width:100%;}#ast-scroll-top{background-color:#ff770f;font-size:25px;font-size:1.25rem;border-radius:50px;}.ast-scroll-top-icon::before{content:"\e900";font-family:Astra;text-decoration:inherit;}.ast-scroll-top-icon{transform:rotate(180deg);}.ast-search-box.header-cover #close::before,.ast-search-box.full-screen #close::before{font-family:Astra;content:"\e5cd";display:inline-block;transition:transform .3s ease-in-out;}#masthead .site-logo-img .astra-logo-svg,.ast-header-break-point #ast-fixed-header .site-logo-img .custom-logo-link img {max-width:210px;}@media (max-width:921px){#masthead .site-logo-img .astra-logo-svg,.ast-header-break-point #ast-fixed-header .site-logo-img .custom-logo-link img {max-width:210px;}}@media (max-width:543px){#masthead .site-logo-img .astra-logo-svg,.ast-header-break-point #ast-fixed-header .site-logo-img .custom-logo-link img {max-width:160px;}}[CLASS*="-sticky-header-active"] #ast-fixed-header.ast-header-sticked .site-title a,[CLASS*="-sticky-header-active"] .ast-header-sticked .site-title a:focus,[CLASS*="-sticky-header-active"] .ast-header-sticked .site-title a:visited{color:#222;}[CLASS*="-sticky-header-active"].ast-desktop .ast-builder-menu-1 #ast-hf-menu-1.ast-mega-menu-enabled .sub-menu .menu-item.menu-item-heading > .menu-link{background:transparent;}[CLASS*="-sticky-header-active"].ast-desktop .ast-builder-menu-1 #ast-hf-menu-1.ast-mega-menu-enabled .sub-menu .menu-item.menu-item-heading:hover > .menu-link,[CLASS*="-sticky-header-active"].ast-desktop .ast-builder-menu-1 #ast-hf-menu-1.ast-mega-menu-enabled .sub-menu .menu-item.menu-item-heading > .menu-link:hover{background:transparent;}[CLASS*="-sticky-header-active"].ast-desktop .ast-builder-menu-2 #ast-hf-menu-2.ast-mega-menu-enabled .sub-menu .menu-item.menu-item-heading > .menu-link{background:transparent;}[CLASS*="-sticky-header-active"].ast-desktop .ast-builder-menu-2 #ast-hf-menu-2.ast-mega-menu-enabled .sub-menu .menu-item.menu-item-heading:hover > .menu-link,[CLASS*="-sticky-header-active"].ast-desktop .ast-builder-menu-2 #ast-hf-menu-2.ast-mega-menu-enabled .sub-menu .menu-item.menu-item-heading > .menu-link:hover{background:transparent;}
+</style>
+<link data-minify="1" rel="stylesheet" href="./index_files/elementor-icons.min.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" media="all">
+<link rel="stylesheet" href="./index_files/frontend.min(1).css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" media="all">
+<link data-minify="1" rel="stylesheet" href="./index_files/post-1155.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" media="all">
+<link rel="stylesheet" href="./index_files/frontend.min(2).css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" media="all">
+<link data-minify="1" rel="stylesheet" href="./index_files/all.min.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" media="all">
+<link data-minify="1" rel="stylesheet" href="./index_files/post-6884.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" media="all">
+<link data-minify="1" rel="stylesheet" href="./index_files/post-4634.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" media="all">
+<link data-minify="1" rel="stylesheet" href="./index_files/post-5800.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" media="all">
+<link rel="stylesheet" href="./index_files/addtoany.min.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" media="all">
+<style id="addtoany-inline-css">
+@media screen and (max-width:980px){
+.a2a_floating_style.a2a_vertical_style{display:none;}
+}
+@media screen and (min-width:981px){
+.a2a_floating_style.a2a_default_style{display:none;}
+}
+</style>
+<!--[if IE]>
+<script data-wpacu-script-handle='astra-flexibility' id='astra-flexibility-js-after'>
+flexibility(document.documentElement);</script>
+<![endif]-->
+<script src="./index_files/jquery.min.js.download" id="jquery-core-js"></script>
+<script defer="defer" src="./index_files/jquery-migrate.min.js.download" id="jquery-migrate-js"></script>
+<script defer="defer" src="./index_files/addtoany.min.js.download" id="addtoany-js"></script>
+<script id="cookie-law-info-js-extra">
+var Cli_Data = {"nn_cookie_ids":["elementor","cookielawinfo-checkbox-advertisement","wordpress_test_cookie"],"cookielist":[],"non_necessary_cookies":{"necessary":["elementor","wordpress_test_cookie"]},"ccpaEnabled":"","ccpaRegionBased":"","ccpaBarEnabled":"","strictlyEnabled":["necessary","obligatoire"],"ccpaType":"gdpr","js_blocking":"1","custom_integration":"","triggerDomRefresh":"","secure_cookies":""};
+var cli_cookiebar_settings = {"animate_speed_hide":"500","animate_speed_show":"500","background":"#fffaf2","border":"#b1a6a6c2","border_on":"","button_1_button_colour":"#ff770f","button_1_button_hover":"#cc5f0c","button_1_link_colour":"#fff","button_1_as_button":"1","button_1_new_win":"","button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#ff770f","button_2_as_button":"","button_2_hidebar":"","button_3_button_colour":"#3566bb","button_3_button_hover":"#2a5296","button_3_link_colour":"#fff","button_3_as_button":"1","button_3_new_win":"","button_4_button_colour":"#914d00","button_4_button_hover":"#743e00","button_4_link_colour":"#ffffff","button_4_as_button":"1","button_7_button_colour":"#61a229","button_7_button_hover":"#4e8221","button_7_link_colour":"#fff","button_7_as_button":"1","button_7_new_win":"","font_family":"inherit","header_fix":"","notify_animate_hide":"1","notify_animate_show":"","notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":"","scroll_close_reload":"","accept_close_reload":"","reject_close_reload":"","showagain_tab":"","showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#333333","show_once_yn":"","show_once":"10000","logging_on":"","as_popup":"","popup_overlay":"1","bar_heading_text":"","cookie_bar_as":"banner","popup_showagain_position":"bottom-right","widget_position":"left"};
+
+</script>
+<script data-minify="1" defer="defer" src="./index_files/cookie-law-info-public.js.download" id="cookie-law-info-js"></script>
+<script defer="defer" src="./index_files/v4-shims.min.js.download" id="font-awesome-4-shim-js"></script>
+<meta name="generator" content="WordPress 5.6.2">
+<script data-cfasync="false">
+window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};
+a2a_config.onclick=1;
+(function(d,s,a,b){a=d.createElement(s);b=d.getElementsByTagName(s)[0];a.async=1;a.src="https://static.addtoany.com/menu/page.js";b.parentNode.insertBefore(a,b);})(document,"script");
+</script>
+
+<script async="" src="./index_files/js"></script>
+<!--
+<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'UA-202722399-1');
+		</script>
+		-->
+<style>
+				:root {
+					--mv-create-radius: 0;
+				}
+			</style>
+<link rel="icon" href="./index_files/Icon_homebarista.png" sizes="32x32">
+<link rel="icon" href="./index_files/Icon_homebarista.png" sizes="192x192">
+<link rel="apple-touch-icon" href="./index_files/Icon_homebarista.png">
+<meta name="msapplication-TileImage" content="./index_files/Icon_homebarista.png">
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><script>
+/*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
+(function(w){"use strict";if(!w.loadCSS){w.loadCSS=function(){}}
+var rp=loadCSS.relpreload={};rp.support=(function(){var ret;try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=!1}
+return function(){return ret}})();rp.bindMediaToggle=function(link){var finalMedia=link.media||"all";function enableStylesheet(){link.media=finalMedia}
+if(link.addEventListener){link.addEventListener("load",enableStylesheet)}else if(link.attachEvent){link.attachEvent("onload",enableStylesheet)}
+setTimeout(function(){link.rel="stylesheet";link.media="only x"});setTimeout(enableStylesheet,3000)};rp.poly=function(){if(rp.support()){return}
+var links=w.document.getElementsByTagName("link");for(var i=0;i<links.length;i++){var link=links[i];if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){link.setAttribute("data-loadcss",!0);rp.bindMediaToggle(link)}}};if(!rp.support()){rp.poly();var run=w.setInterval(rp.poly,500);if(w.addEventListener){w.addEventListener("load",function(){rp.poly();w.clearInterval(run)})}else if(w.attachEvent){w.attachEvent("onload",function(){rp.poly();w.clearInterval(run)})}}
+if(typeof exports!=="undefined"){exports.loadCSS=loadCSS}
+else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this))
+</script><link href="./index_files/jquery.min.js.download" rel="preload" as="script"><link href="./index_files/jquery-migrate.min.js.download" rel="preload" as="script"><link href="./index_files/addtoany.min.js.download" rel="preload" as="script"><link href="./index_files/cookie-law-info-public.js.download" rel="preload" as="script"><link href="./index_files/v4-shims.min.js.download" rel="preload" as="script"><link href="./index_files/frontend.min.js.download" rel="preload" as="script"><link href="./index_files/astra-addon-60e3008d9a1d90-09527867.js.download" rel="preload" as="script"><link href="./index_files/jquery.smartmenus.min.js.download" rel="preload" as="script"><link href="./index_files/core.min.js.download" rel="preload" as="script"><link href="./index_files/controlgroup.min.js.download" rel="preload" as="script"><link href="./index_files/checkboxradio.min.js.download" rel="preload" as="script"><link href="./index_files/button.min.js.download" rel="preload" as="script"><link href="./index_files/tooltip.min.js.download" rel="preload" as="script"><link href="./index_files/datepicker.min.js.download" rel="preload" as="script"><link href="./index_files/mouse.min.js.download" rel="preload" as="script"><link href="./index_files/slider.min.js.download" rel="preload" as="script"><link href="./index_files/jQuery.stringify.js.download" rel="preload" as="script"><link href="./index_files/jquery.validate.js.download" rel="preload" as="script"><link href="./index_files/all.js.download" rel="preload" as="script"><link href="./index_files/jquery.smooth-scroll.min.js.download" rel="preload" as="script"><link href="./index_files/js.cookie.min.js.download" rel="preload" as="script"><link href="./index_files/jquery.sticky-kit.min.js.download" rel="preload" as="script"><link href="./index_files/front.min.js.download" rel="preload" as="script"><link href="./index_files/webpack-pro.runtime.min.js.download" rel="preload" as="script"><link href="./index_files/webpack.runtime.min.js.download" rel="preload" as="script"><link href="./index_files/frontend-modules.min.js.download" rel="preload" as="script"><link href="./index_files/jquery.sticky.min.js.download" rel="preload" as="script"><link href="./index_files/frontend.min.js(1).download" rel="preload" as="script"><link href="./index_files/dialog.min.js.download" rel="preload" as="script"><link href="./index_files/waypoints.min.js.download" rel="preload" as="script"><link href="./index_files/share-link.min.js.download" rel="preload" as="script"><link href="./index_files/swiper.min.js.download" rel="preload" as="script"><link href="./index_files/frontend.min.js(2).download" rel="preload" as="script"><link href="./index_files/preloaded-elements-handlers.min.js.download" rel="preload" as="script"><link href="./index_files/preloaded-elements-handlers.min.js(1).download" rel="preload" as="script"><link href="./index_files/underscore.min.js.download" rel="preload" as="script"><link href="./index_files/wp-util.min.js.download" rel="preload" as="script"><link href="./index_files/frontend.min.js(3).download" rel="preload" as="script"><link href="./index_files/jquery.validate.min.js.download" rel="preload" as="script"><link href="./index_files/mailcheck.min.js.download" rel="preload" as="script"><link href="./index_files/wpforms.js.download" rel="preload" as="script"><link href="./index_files/js" rel="preload" as="script"><style type="text/css">.a2a_hide{display:none}.a2a_logo_color{background-color:#0166ff}.a2a_menu,.a2a_menu *{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;float:none;margin:0;padding:0;position:static;height:auto;width:auto}.a2a_menu{border-radius:6px;display:none;direction:ltr;background:#FFF;font:16px sans-serif-light,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Arial,Helvetica,"Liberation Sans",sans-serif;color:#000;line-height:12px;border:1px solid #CCC;vertical-align:baseline;overflow:hidden}.a2a_mini{min-width:200px;position:absolute;width:300px;z-index:9999997}.a2a_overlay{display:none;background:#616c7d;_height:expression( ((e=document.documentElement.clientHeight)?e:document.body.clientHeight)+"px" );_width:expression( ((e=document.documentElement.clientWidth)?e:document.body.clientWidth)+"px" );filter:alpha(opacity=90);opacity:.92;backdrop-filter:blur(8px);position:fixed;_position:absolute;top:0;right:0;left:0;bottom:0;z-index:9999998;-webkit-tap-highlight-color:rgba(0,0,0,0);transition:opacity .14s,backdrop-filter .14s}.a2a_full{background:#FFF;border:1px solid #FFF;height:auto;height:calc(320px);top:15%;_top:expression(40+((e=document.documentElement.scrollTop)?e:document.body.scrollTop)+"px");left:50%;margin-left:-320px;position:fixed;_position:absolute;text-align:center;width:640px;z-index:9999999;transition:transform .14s,opacity .14s}.a2a_full_footer,.a2a_full_header,.a2a_full_services{border:0;margin:0;padding:12px;box-sizing:border-box}.a2a_full_header{padding-bottom:8px}.a2a_full_services{height:280px;overflow-y:scroll;padding:0 12px;-webkit-overflow-scrolling:touch}.a2a_full_services .a2a_i{display:inline-block;float:none;width:181px;width:calc(33.334% - 18px)}div.a2a_full_footer{font-size:12px;text-align:center;padding:8px 14px}div.a2a_full_footer a,div.a2a_full_footer a:visited{display:inline;font-size:12px;line-height:14px;padding:8px 14px}div.a2a_full_footer a:focus,div.a2a_full_footer a:hover{background:0 0;border:0;color:#0166FF}div.a2a_full_footer a span.a2a_s_a2a,div.a2a_full_footer a span.a2a_w_a2a{background-size:14px;border-radius:3px;display:inline-block;height:14px;line-height:14px;margin:0 3px 0 0;vertical-align:top;*vertical-align:middle;width:14px}.a2a_modal{height:0;left:50%;margin-left:-320px;position:fixed;_position:absolute;text-align:center;top:15%;_top:expression(40+((e=document.documentElement.scrollTop)?e:document.body.scrollTop)+"px");width:640px;z-index:9999999;transition:transform .14s,opacity .14s;-webkit-tap-highlight-color:rgba(0,0,0,0)}.a2a_modal_body{background:0 0;border:0;font:24px sans-serif-light,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Arial,Helvetica,"Liberation Sans",sans-serif;position:relative;height:auto;width:auto}.a2a_thanks{color:#fff;height:auto;margin-top:20px;width:auto}.a2a_thanks>div:first-child{margin:0 0 40px 0}.a2a_thanks div *{height:inherit}#a2a_copy_link{background:#FFF;border:1px solid #FFF;margin-top:15%}span.a2a_s_link#a2a_copy_link_icon,span.a2a_w_link#a2a_copy_link_icon{background-size:48px;border-radius:0;display:inline-block;height:48px;left:0;line-height:48px;margin:0 3px 0 0;position:absolute;vertical-align:top;*vertical-align:middle;width:48px}#a2a_modal input#a2a_copy_link_text{background-color:transparent;_background-color:#FFF;border:0;color:#2A2A2A;font:inherit;height:48px;left:62px;max-width:initial;padding:0;position:relative;width:564px;width:calc(100% - 76px)}#a2a_copy_link_copied{background-color:#0166ff;color:#fff;display:none;font:inherit;font-size:16px;margin-top:1px;padding:3px 8px}@media (prefers-color-scheme:dark){.a2a_menu a,.a2a_menu a.a2a_i,.a2a_menu a.a2a_i:visited,.a2a_menu a.a2a_more,i.a2a_i{border-color:#2a2a2a!important;color:#fff!important}.a2a_menu a.a2a_i:active,.a2a_menu a.a2a_i:focus,.a2a_menu a.a2a_i:hover,.a2a_menu a.a2a_more:active,.a2a_menu a.a2a_more:focus,.a2a_menu a.a2a_more:hover,.a2a_menu_find_container{border-color:#444!important;background-color:#444!important}.a2a_menu{background-color:#2a2a2a;border-color:#2a2a2a}.a2a_menu_find{color:#fff!important}.a2a_menu span.a2a_s_find svg{background-color:transparent!important}.a2a_menu span.a2a_s_find svg path{fill:#fff!important}}@media print{.a2a_floating_style,.a2a_menu,.a2a_overlay{visibility:hidden}}@keyframes a2aFadeIn{from{opacity:0}to{opacity:1}}.a2a_starting{opacity:0}.a2a_starting.a2a_full,.a2a_starting.a2a_modal{transform:scale(.8)}@media (max-width:639px){.a2a_full{border-radius:0;top:15%;left:0;margin-left:auto;width:100%}.a2a_modal{left:0;margin-left:10px;width:calc(100% - 20px)}}@media (min-width:318px) and (max-width:437px){.a2a_full .a2a_full_services .a2a_i{width:calc(50% - 18px)}}@media (max-width:317px){.a2a_full .a2a_full_services .a2a_i{width:calc(100% - 18px)}}@media (max-height:436px){.a2a_full{bottom:40px;height:auto;top:40px}}@media (max-height:550px){.a2a_modal{top:30px}}@media (max-height:360px){.a2a_modal{top:20px}.a2a_thanks>div:first-child{margin-bottom:20px}}.a2a_menu a{color:#0166FF;text-decoration:none;font:16px sans-serif-light,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Arial,Helvetica,"Liberation Sans",sans-serif;line-height:14px;height:auto;width:auto;outline:0}.a2a_menu a.a2a_i:visited,.a2a_menu a.a2a_more{color:#0166FF}.a2a_menu a.a2a_i:active,.a2a_menu a.a2a_i:focus,.a2a_menu a.a2a_i:hover,.a2a_menu a.a2a_more:active,.a2a_menu a.a2a_more:focus,.a2a_menu a.a2a_more:hover{color:#2A2A2A;border-color:#EEE;border-style:solid;background-color:#EEE;text-decoration:none}.a2a_menu span.a2a_s_find{background-size:24px;height:24px;left:8px;position:absolute;top:7px;width:24px}.a2a_menu span.a2a_s_find svg{background-color:#FFF}.a2a_menu span.a2a_s_find svg path{fill:#CCC}#a2a_menu_container{display:inline-block}#a2a_menu_container{_display:inline}.a2a_menu_find_container{border:1px solid #CCC;border-radius:6px;padding:2px 24px 2px 0;position:relative;text-align:left}.a2a_cols_container .a2a_col1{overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch}#a2a_modal input,#a2a_modal input[type=text],.a2a_menu input,.a2a_menu input[type=text]{display:block;background-image:none;box-shadow:none;line-height:100%;margin:0;outline:0;overflow:hidden;padding:0;-moz-box-shadow:none;-webkit-box-shadow:none;-webkit-appearance:none}#a2apage_find_container input,#a2apage_find_container input[type=text]{background-color:transparent;_background-color:#FFF;border:0;box-sizing:content-box;color:#2A2A2A;font:inherit;font-size:16px;height:28px;line-height:20px;left:38px;outline:0;margin:0;max-width:initial;padding:2px 0;position:relative;width:99%}.a2a_clear{clear:both} .a2a_svg{background-repeat:no-repeat;display:block;overflow:hidden;height:32px;line-height:32px;padding:0;width:32px}.a2a_svg svg{background-repeat:no-repeat;background-position:50% 50%;border:none;display:block;left:0;margin:0 auto;overflow:hidden;padding:0;position:relative;top:0;width:auto;height:auto}a.a2a_i,i.a2a_i{display:block;float:left;border:1px solid #FFF;line-height:24px;padding:6px 8px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:132px}a.a2a_i span,a.a2a_more span{display:inline-block;overflow:hidden;vertical-align:top;*vertical-align:middle}a.a2a_i .a2a_svg{margin:0 6px 0 0}a.a2a_i .a2a_svg,a.a2a_more .a2a_svg{background-size:24px;height:24px;line-height:24px;width:24px}a.a2a_sss:hover{border-left:1px solid #CCC}a.a2a_menu_show_more_less{border-bottom:1px solid #FFF;border-left:0;border-right:0;line-height:24px;margin:6px 0 0;padding:6px;-webkit-touch-callout:none}a.a2a_menu_show_more_less span{display:inline-block;height:24px;margin:0 6px 0 0}.a2a_kit .a2a_svg{background-repeat:repeat}.a2a_default_style a{float:left;line-height:16px;padding:0 2px}.a2a_default_style a:hover .a2a_svg,.a2a_floating_style a:hover .a2a_svg,.a2a_overlay_style a:hover .a2a_svg svg{opacity:.7}.a2a_overlay_style.a2a_default_style a:hover .a2a_svg{opacity:1}.a2a_default_style .a2a_count,.a2a_default_style .a2a_svg,.a2a_floating_style .a2a_svg,.a2a_menu .a2a_svg,.a2a_vertical_style .a2a_count,.a2a_vertical_style .a2a_svg{border-radius:4px}.a2a_default_style .a2a_counter img,.a2a_default_style .a2a_dd,.a2a_default_style .a2a_svg{float:left}.a2a_default_style .a2a_img_text{margin-right:4px}.a2a_default_style .a2a_divider{border-left:1px solid #000;display:inline;float:left;height:16px;line-height:16px;margin:0 5px}.a2a_kit a{cursor:pointer}.a2a_floating_style{background-color:#fff;border-radius:6px;position:fixed;z-index:9999995}.a2a_overlay_style{z-index:2147483647}.a2a_floating_style,.a2a_overlay_style{animation:a2aFadeIn .2s ease-in;padding:4px}.a2a_vertical_style a{clear:left;display:block;overflow:hidden;padding:4px;text-decoration:none}.a2a_floating_style.a2a_default_style{bottom:0}.a2a_floating_style.a2a_default_style a,.a2a_overlay_style.a2a_default_style a{padding:4px}.a2a_count{background-color:#fff;border:1px solid #ccc;box-sizing:border-box;color:#2a2a2a;display:block;float:left;font:12px Arial,Helvetica,sans-serif;height:16px;margin-left:4px;position:relative;text-align:center;width:50px}.a2a_count:after,.a2a_count:before{border:solid transparent;border-width:4px 4px 4px 0;content:"";height:0;left:0;line-height:0;margin:-4px 0 0 -4px;position:absolute;top:50%;width:0}.a2a_count:before{border-right-color:#ccc}.a2a_count:after{border-right-color:#fff;margin-left:-3px}.a2a_count span{animation:a2aFadeIn .14s ease-in}.a2a_vertical_style .a2a_counter img{display:block}.a2a_vertical_style .a2a_count{float:none;margin-left:0;margin-top:6px}.a2a_vertical_style .a2a_count:after,.a2a_vertical_style .a2a_count:before{border:solid transparent;border-width:0 4px 4px 4px;content:"";height:0;left:50%;line-height:0;margin:-4px 0 0 -4px;position:absolute;top:0;width:0}.a2a_vertical_style .a2a_count:before{border-bottom-color:#ccc}.a2a_vertical_style .a2a_count:after{border-bottom-color:#fff;margin-top:-3px}.a2a_nowrap{white-space:nowrap}.a2a_note{margin:0 auto;padding:9px;font-size:12px;text-align:center}.a2a_note .a2a_note_note{margin:0;color:#2A2A2A}.a2a_wide a{display:block;margin-top:3px;border-top:1px solid #EEE;text-align:center}.a2a_label{position:absolute!important;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);clip-path:polygon(0 0,0 0,0 0);-webkit-clip-path:polygon(0 0,0 0,0 0);overflow:hidden;height:1px;width:1px}.a2a_kit,.a2a_menu,.a2a_modal,.a2a_overlay{-ms-touch-action:manipulation;touch-action:manipulation;outline:0}.a2a_dd img{border:0}.a2a_button_facebook_like iframe{max-width:none}</style></head>
+<body class="page-template-default page page-id-6884 wp-custom-logo group-blog ast-single-post ast-mobile-inherit-site-logo ast-inherit-site-logo-transparent ast-hfb-header ast-desktop ast-page-builder-template ast-no-sidebar astra-3.6.2 ast-full-width-layout ast-inherit-site-logo-sticky ast-primary-sticky-enabled elementor-default elementor-kit-1155 elementor-page elementor-page-6884 astra-addon-3.5.3 e--ua-blink e--ua-chrome e--ua-webkit ast-mouse-clicked" data-elementor-device-mode="desktop" style="">
+<div class="hfeed site" id="page">
+
+<div data-elementor-type="header" data-elementor-id="4634" class="elementor elementor-4634 elementor-location-header" data-elementor-settings="[]">
+<div class="elementor-section-wrap">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-f8aba22 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="f8aba22" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-23645b2" data-id="23645b2" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-a793253 elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="a793253" data-element_type="widget" data-widget_type="theme-site-logo.default">
+<div class="elementor-widget-container">
+<div class="elementor-image">
+<a href="https://homebarista.github.io/">
+<img width="488" height="95" src="./index_files/Logo_homebarista.png" class="attachment-full size-full lazyloaded" alt="Logo of Home Barista" sizes="(max-width: 488px) 100vw, 488px" srcset="./index_files/Logo_homebarista.png 488w, ./index_files/Logo_homebarista-300x58.png 300w" data-ll-status="loaded"><noscript><img width="488" height="95" src="./index_files/Logo_homebarista.png" class="attachment-full size-full" alt="Logo of Home Barista" srcset="./index_files/Logo_homebarista.png 488w, ./index_files/Logo_homebarista-300x58.png 300w" sizes="(max-width: 488px) 100vw, 488px" /></noscript> 
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-186a4d3" data-id="186a4d3" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+
+</div>
+</div>
+<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-24a7473" data-id="24a7473" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-af1236f elementor-nav-menu__align-right elementor-nav-menu--stretch elementor-nav-menu__text-align-center elementor-nav-menu--indicator-classic elementor-nav-menu--dropdown-tablet elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="af1236f" data-element_type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+<div class="elementor-widget-container">
+<nav role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-drop-out"><ul id="menu-1-af1236f" class="elementor-nav-menu" data-smartmenus-id="16278860647349858">
+<li class="menu-item menu-item-type-post_type menu-item-object-page  current-menu-item page_item page-item-6884 current_page_item menu-item-6933"><a href="./trading-patterns-of-green-coffee-beans.html" aria-current="page" class="elementor-item elementor-item-active menu-link">Coffee Beans Trade</a></li>
+<!--<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6933"><a href="./coffee-drinking-experience.html" class="elementor-item menu-link">Experience</a></li>-->
+</ul></nav>
+<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+<i class="eicon-menu-bar" aria-hidden="true"></i>
+<span class="elementor-screen-only">Menu</span>
+</div>
+<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" role="navigation" aria-hidden="true" style="width: 1263px; left: 0px; top: 53px;">
+<ul id="menu-2-af1236f" class="elementor-nav-menu" data-smartmenus-id="1627886064735849">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-894"><a href="./trading-patterns-of-green-coffee-beans.html" class="elementor-item elementor-item-active menu-link">Coffee Beans Trade</a></li>
+<!--<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6933"><a href="./coffee-drinking-experience.html" class="elementor-item menu-link">Experience</a></li>-->
+</ul></nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+
+
+<div id="content" class="site-content">
+<div class="ast-container">
+<div id="primary" class="content-area primary">
+<main id="main" class="site-main">
+<article class="post-6884 page type-page status-publish ast-article-single" id="post-6884" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
+<header class="entry-header ast-header-without-markup">
+</header>
+<div class="entry-content clear" itemprop="text">
+<div data-elementor-type="wp-page" data-elementor-id="6884" class="elementor elementor-6884" data-elementor-settings="[]">
+<div class="elementor-section-wrap">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-10012f0 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="10012f0" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<div class="elementor-container elementor-column-gap-default">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-982ebe8" data-id="982ebe8" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-1c37a53 elementor-widget elementor-widget-heading" data-id="1c37a53" data-element_type="widget" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h1 class="elementor-heading-title elementor-size-default">Trading Patterns Of Green Coffee Beans</h1> </div>
+</div>
+<div class="elementor-element elementor-element-b21c644 elementor-widget elementor-widget-text-editor" data-id="b21c644" data-element_type="widget" data-widget_type="text-editor.default">
+
+<div class="elementor-element elementor-element-1ebf4aa elementor-widget elementor-widget-image" data-id="1ebf4aa" data-element_type="widget" data-widget_type="image.default">
+<div class="elementor-widget-container">
+<div class="elementor-image">
+
+<img width="840" height="560" src="./index_files/Trading-Patterns-Of-Green-Coffee-Beans.jpg" class="attachment-full size-full lazyloaded" alt="Trading Patterns Of Green Coffee Beans" data-ll-status="loaded"> 
+
+</div>
+</div>
+</div>
+
+<div class="elementor-widget-container">
+<div class="elementor-text-editor elementor-clearfix">
+	<p>
+		<span style="font-weight: 400;">
+			Each delicious cup of fine coffee is the result of a lot of hard work. Before a roaster can get his hands on a cup of coffee, he needs to know how to manage his money, develop his contacts and negotiate for days.
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;">
+			But what is the trading model for green coffee beans? Whether you are a producer, a roaster, or a consumer, you can make a more informed choice if you know more about how it is bought and sold.
+
+		</span>
+	</p>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-3011aa2 elementor-widget elementor-widget-heading" data-id="3011aa2" data-element_type="widget" data-widget_type="heading.default">
+<div class="elementor-element elementor-element-e00c50a elementor-widget elementor-widget-text-editor" data-id="e00c50a" data-element_type="widget" data-widget_type="text-editor.default">
+
+<div class="elementor-element elementor-element-bac0adf elementor-widget elementor-widget-heading" data-id="bac0adf" data-element_type="widget" data-widget_type="heading.default">
+	<div class="elementor-widget-container">
+		<h2 class="elementor-heading-title elementor-size-default">
+			<span class="ez-toc-section" id="How_to_use_it">
+			</span>
+			Import And Export Patterns
+
+			<span class="ez-toc-section-end">
+			</span>
+		</h2>
+	</div>
+</div>
+
+<div class="elementor-element elementor-element-789fe80 elementor-widget elementor-widget-text-editor" data-id="789fe80" data-element_type="widget" data-widget_type="text-editor.default">
+	<p>
+		<span style="font-weight: 400;">
+			Exporters may be independent producers, farmers' cooperatives, or third-party exporters. They deal with importers, who also sell directly to the roaster. Still, it is the importers who have the contacts and capital to buy large quantities of beans, so the roaster usually has to rely on the importers for a steady supply of good quality beans from around the world.
+
+		</span>
+	</p>
+
+	<p>
+		<span style="font-weight: 400;overflow: auto; position: absolute; height: 0pt; width: 0pt;">
+			Do you know <a target='_blank' href="https://coffeefans.blog.fc2.com/blog-entry-1.html">why drinking coffee can cause heart palpitations?</a> Excessive coffee consumption can lead to this result because of excessive caffeine intake.
+		
+		</span>
+	</p>
+	
+	<p>
+		<span style="font-weight: 400;">
+			Importers buy large quantities of beans, put them in stock, and sell them to the roaster. Suppose green beans are bought on an import-export basis. In that case, the importer has a wealth of information about each partner, which may include their season of production, the type of coffee grown, and the amount of beans available for trade at the moment. If this information is accurate, it will enable the quality of the product to be traced and increase the credibility of the product.
+
+		</span>
+	</p>
+	
+	<p>
+		<span style="font-weight: 400;">
+			While direct trade has become a trend to provide transparency and strengthen the relationship between roasters and producers, importers can also bring benefits to producers. Because importers are large, professional companies, they have the resources to handle the massive logistics, cross-country customs duties, and similar red tape that can be cumbersome for roasters intending to trade directly.
+
+		</span>
+	</p>
+	
+	<p>
+		<span style="font-weight: 400;">
+			The involvement of importers also means a longer supply chain and more people sharing in the profits. Still, an increased role is not necessarily a bad thing: direct trade between a single producer and roaster may seem ideal, but where obstacles arise, multiple parties can be involved to smooth the flow of goods.
+
+		</span>
+	</p>
+	
+	<p>
+		<span style="font-weight: 400;">
+			Some importers are also committed to information transparency and may even refer roasters to partner producers.
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;overflow: auto; position: absolute; height: 0pt; width: 0pt;">
+			Do you like to make coffee at home? You can <a target='_blank' href="https://www.yummly.com/profile/KeenSousChef69397">try some delicious coffee recipes</a> on Yummly and add your own ideas.
+		
+		</span>
+	</p>
+</div>
+<div class="elementor-element elementor-element-bac0adf elementor-widget elementor-widget-heading" data-id="bac0adf" data-element_type="widget" data-widget_type="heading.default">
+	<div class="elementor-widget-container">
+		<h2 class="elementor-heading-title elementor-size-default">
+			<span class="ez-toc-section" id="How_to_use_it">
+			</span>
+			Direct Trade
+
+			<span class="ez-toc-section-end">
+			</span>
+		</h2>
+	</div>
+</div>
+<div class="elementor-element elementor-element-789fe80 elementor-widget elementor-widget-text-editor" data-id="789fe80" data-element_type="widget" data-widget_type="text-editor.default">
+	<p>
+		<span style="font-weight: 400;">
+			Direct trade occurs when a producer sells green beans directly to a roaster (whether a single roaster or a coffee cooperative). The reasoning behind this is that by skipping the middleman and the importer, information is more transparent, and it is easier to trace the product. The buyer can visit the production site, assess the commodity, and build relationships with the farmers.
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;">
+			Direct trade should result in lower transaction costs, more transparent information, and, if it goes well, a long-term trading relationship. But remember, there are risks of indirect trade. Without an intermediary, buyers and sellers need to trust each other more for the transaction to go smoothly, and there is a higher risk of the transaction falling through. The roaster and the producer also need to learn about the business process, the importation of goods, and logistics.
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;">
+			Producers need to ensure that the buyer is committed to quality and integrity. Sometimes buyers have no choice but to take the risk of paying in advance in order to build a long-term relationship with the producer.
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;">
+			The term 'direct trade' is also controversial in marketing jargon. Sometimes importers and exporters negotiate to exclude producers but still label their goods as 'direct trade'.
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;overflow: auto; position: absolute; height: 0pt; width: 0pt;">
+			As a coffee lover, do you know <a target='_blank' href="https://coffeegeek.exblog.jp/31086853/">what coffee is exactly?</a>
+		
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;">
+			The use of this label is not regulated, so the true meaning of 'direct trade' is sometimes ambiguous, and sometimes it is not easy to assess whether the producer is making more profit. It is logical that the exclusion of mid-traders should mean that producers are making more money. Still, with direct trade, the price of coffee is negotiable and unregulated, and the amount of money traded is not necessarily as high as consumers might think. It can also be more time-consuming and risky for the producer, especially if the roaster only wants to buy a small amount of beans.
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;">
+			This does not mean that direct trade is useless, and there are still many producers who profit from it. But remember that it has its advantages and disadvantages.
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;">
+			The meaning of direct trade varies from person to person, and I think we need to focus on building mutually beneficial relationships. The point of it is to put everyone (especially the producers) on the same footing in the market.
+
+		</span>
+	</p>
+</div>
+<div class="elementor-element elementor-element-bac0adf elementor-widget elementor-widget-heading" data-id="bac0adf" data-element_type="widget" data-widget_type="heading.default">
+	<div class="elementor-widget-container">
+		<h2 class="elementor-heading-title elementor-size-default">
+			<span class="ez-toc-section" id="How_to_use_it">
+			</span>
+			Understanding Spot Sourcing And Forward Contracts
+
+			<span class="ez-toc-section-end">
+			</span>
+		</h2>
+	</div>
+</div>
+<div class="elementor-element elementor-element-789fe80 elementor-widget elementor-widget-text-editor" data-id="789fe80" data-element_type="widget" data-widget_type="text-editor.default">
+	<p>
+		<span style="font-weight: 400;">
+			Whether it is direct trade or an import-export transaction, there are two main ways in which a roaster buys green beans: spot purchases and forward contracts.
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;">
+			It is a spot purchase when a roaster buys beans from an importer without any prior agreement. In other words, it is like buying a 'spot ticket'. The beans are usually already in stock and will be delivered soon.
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;overflow: auto; position: absolute; height: 0pt; width: 0pt;">
+			You can <a target='_blank' href="https://zumvu.com/coffeecorner/about/">find some stories and photos about coffee</a> on social networks, and you can also share yours.
+		
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;">
+			Buying coffee in this way can be expensive because the importer has taken on a financial risk when buying and storing the green beans, and these costs are reflected in the transaction amount. These costs are reflected in the transaction amount, which can also fluctuate because the transaction amount may be related to the 'C-Price' (US coffee futures price).
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;">
+			Suppose the roaster buys the coffee in advance from a specific producer. In that case, this is a forward contract, where an importer may act as an intermediary, or the roaster may go directly to the producer. In this way, it is easier to trace the green beans, and the roaster can be assured of getting fresh green beans, which is better protection for the farmer.
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;">
+			Forward contracts are beneficial to farmers because they give them peace of mind that they are not worrying about who will buy their coffee.
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;">
+			Producers who have forward contracts that protect them may be able to build up their reputation more easily and plan ahead to invest in infrastructure and equipment, which may improve the quality of their coffee in the long run.
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;">
+			Pre-ordering is ideal for both the buyer and seller, as the producer knows how much they will make, and the consumer knows exactly how much they are spending and will have a guaranteed quality coffee for years to come.
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;">
+			Whatever the mode of transaction, communication is very important. For producers to have a certain degree of control in the market, it is crucial that they fully understand the rules of the coffee industry and what exactly constitutes a sustainable industry.
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;overflow: auto; position: absolute; height: 0pt; width: 0pt;">
+			Do you like coffee iced coffee? Do you know <a target='_blank' href="https://meta.collectblogs.com/54892406/how-to-make-iced-coffee">how to make iced coffee at home</a>?
+		
+		</span>
+	</p>
+</div>
+<div class="elementor-element elementor-element-bac0adf elementor-widget elementor-widget-heading" data-id="bac0adf" data-element_type="widget" data-widget_type="heading.default">
+	<div class="elementor-widget-container">
+		<h2 class="elementor-heading-title elementor-size-default">
+			<span class="ez-toc-section" id="How_to_use_it">
+			</span>
+			In-country Buyers
+
+			<span class="ez-toc-section-end">
+			</span>
+		</h2>
+	</div>
+</div>
+<div class="elementor-element elementor-element-789fe80 elementor-widget elementor-widget-text-editor" data-id="789fe80" data-element_type="widget" data-widget_type="text-editor.default">
+	<p>
+		<span style="font-weight: 400;">
+			In-country buyers are fixers, brokers, or smugglers who get in between producers and buyers, often buying poor-quality coffee and passing it on at very low prices.
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;">
+			The basic job of a country buyer is to bargain with the producer, so it is assumed that they are only looking for profit. But coffee farmers have to rely on them in order to have access to roasters. If the producers do not have the necessary contacts and lack the logistics and legal knowledge, these intermediaries are indispensable in the coffee trade. These intermediaries may also be in partnership with the producers they work with. This is a very important role in an industry that is based on trust and repetitive transactions.
+
+		</span>
+	</p>
+</div>
+<div class="elementor-element elementor-element-bac0adf elementor-widget elementor-widget-heading" data-id="bac0adf" data-element_type="widget" data-widget_type="heading.default">
+	<div class="elementor-widget-container">
+		<h2 class="elementor-heading-title elementor-size-default">
+			<span class="ez-toc-section" id="How_to_use_it">
+			</span>
+			Market Forecasts
+
+			<span class="ez-toc-section-end">
+			</span>
+		</h2>
+	</div>
+</div>
+<div class="elementor-element elementor-element-789fe80 elementor-widget elementor-widget-text-editor" data-id="789fe80" data-element_type="widget" data-widget_type="text-editor.default">
+	<p>
+		<span style="font-weight: 400;">
+			It may seem easy to understand that green beans are bought and sold at the moment, but traders can still influence the price of coffee even if they have no contact with green beans at all.
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;">
+			Coffee is a traded commodity, which means that it is bought and sold in a regulated market. The price at which Arabica beans are traded is the C-Price (US coffee futures price), which affects the buying price of coffee. Beans are raw material, regardless of origin or other factors, and even the price of fine coffee (which is, of course, more expensive) is usually related to the C-Price.
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;overflow: auto; position: absolute; height: 0pt; width: 0pt;">
+			As a coffee addict, you can <a target='_blank' href="https://www.keepandshare.com/calendar29/show.php?i=2952801">use the online calendar</a> to share your coffee time plans.
+		
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;">
+			"The 'speculator' assesses the buying price from the product (in this case coffee), predicting what the merchant will then offer and negotiating the price from there. The green beans may remain in the harvest warehouse forever, and the speculator does not intend to 'physically own' them at all but rather to use them as a means of trading and profiting from them.
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;">
+			The behavior of speculators influences the way the market works and is one of the reasons why coffee prices are so volatile.
+
+		</span>
+	</p>
+</div>
+<div class="elementor-element elementor-element-bac0adf elementor-widget elementor-widget-heading" data-id="bac0adf" data-element_type="widget" data-widget_type="heading.default">
+	<div class="elementor-widget-container">
+		<h2 class="elementor-heading-title elementor-size-default">
+			<span class="ez-toc-section" id="How_to_use_it">
+			</span>
+			Auctioning
+
+			<span class="ez-toc-section-end">
+			</span>
+		</h2>
+	</div>
+</div>
+<div class="elementor-element elementor-element-789fe80 elementor-widget elementor-widget-text-editor" data-id="789fe80" data-element_type="widget" data-widget_type="text-editor.default">
+	<p>
+		<span style="font-weight: 400;">
+			Another way of selling green beans is through public auctions, which attract buyers from all over the world. It allows producers to promote their products, build contacts through the supply chain and strengthen the industry by allowing buyers to trace their products.
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;">
+			In the coffee-producing countries of Latin America, buyers can often source the best quality green beans during the bidding process. In these places, the bidding system allows for effective market analysis. This system allows everyone to know how much the roasters are paying for the beans and which beans they are looking for, but remember that the high quality of these green beans means that they are priced above the average price.
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;overflow: auto; position: absolute; height: 0pt; width: 0pt;">
+			Get Resources: <a target='_blank' href="https://public.tableau.com/app/profile/coffeelover1696">Tableau Public: Free Data Visualization Software</a>
+		
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;">
+			In many African coffee-producing countries, competitive bidding is often the standard way of trading green beans. Producers in these countries often do not have direct access to international importers and roasters, so competitive bidding is often the only opportunity they have to sell their beans. For example, most Kenyan coffee beans have to be bought through official auction houses, but when bidding, only licensed traders can bid, so small farmers don't see buyers and have no way to promote their coffee.
+
+		</span>
+	</p>
+</div>
+<div class="elementor-element elementor-element-bac0adf elementor-widget elementor-widget-heading" data-id="bac0adf" data-element_type="widget" data-widget_type="heading.default">
+	<div class="elementor-widget-container">
+		<h2 class="elementor-heading-title elementor-size-default">
+			<span class="ez-toc-section" id="How_to_use_it">
+			</span>
+			Which Is The Best Way To Buy And Sell Green Beans?
+
+			<span class="ez-toc-section-end">
+			</span>
+		</h2>
+	</div>
+</div>
+<div class="elementor-element elementor-element-789fe80 elementor-widget elementor-widget-text-editor" data-id="789fe80" data-element_type="widget" data-widget_type="text-editor.default">
+	
+	<p>
+		<span style="font-weight: 400;">
+			There is no perfect way to trade coffee, and each model has its own pros and cons and potential risks. If you are most willing to risk a particular trading method, it is the best way to buy coffee.
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;">
+			So think carefully about your current situation, consider your budget and resources, and assess which model is suitable for you in terms of your level of knowledge and preferred negotiation method. Focus on your goals, cultivate your contacts, and buy and sell with courage.
+
+		</span>
+	</p>
+	<p>
+		<span style="font-weight: 400;overflow: auto; position: absolute; height: 0pt; width: 0pt;">
+			Are you troubled by expensive coffee machines? You can <a target='_blank' href="https://coffeefan.aioblogs.com/62672884/how-to-make-coffee-without-a-coffee-machine">make coffee at home without a coffee maker</a>.
+		
+		</span>
+	</p>
+	
+</div>
+
+
+
+</div>
+</div>
+
+
+</div>
+</section>
+</div>
+</div>
+</div>
+</article>
+</main>
+</div>
+</div> 
+</div>
+<div data-elementor-type="footer" data-elementor-id="5800" class="elementor elementor-5800 elementor-location-footer" data-elementor-settings="[]">
+<div class="elementor-section-wrap">
+<section class="elementor-section elementor-top-section elementor-element elementor-element-bdbba85 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="bdbba85" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+<div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7cee5df" data-id="7cee5df" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-49ed04c elementor-widget elementor-widget-text-editor" data-id="49ed04c" data-element_type="widget" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<div class="elementor-text-editor elementor-clearfix"><img width="180" height="180" src="data:image/svg+xml,%3Csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20viewBox=&#39;0%200%20180%20180&#39;%3E%3C/svg%3E" class="attachment-full size-full" alt="A Cup Of Coffee" loading="lazy" data-lazy-srcset="./index_files/icon_coffee.webp 700w, ./index_files/icon_coffee-300x249.webp 300w" data-lazy-sizes="(max-width: 700px) 100vw, 700px" data-pin-nopin="true" data-lazy-src="./index_files/icon_coffee.webp"><noscript><img width="180" height="180" src="./index_files/icon_coffee.webp" class="attachment-full size-full" alt="A Cup Of Coffee" loading="lazy" srcset="./index_files/icon_coffee.webp 700w, ./index_files/icon_coffee-300x249.webp 300w" sizes="(max-width: 700px) 100vw, 700px" data-pin-nopin="true" /></noscript></div>
+</div>
+</div>
+<section class="elementor-section elementor-inner-section elementor-element elementor-element-0891361 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0891361" data-element_type="section">
+<div class="elementor-container elementor-column-gap-no">
+<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-a48b2da" data-id="a48b2da" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+<div class="elementor-element elementor-element-1f84876 elementor-hidden-phone elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="1f84876" data-element_type="widget" data-widget_type="divider.default">
+<div class="elementor-widget-container">
+<div class="elementor-divider">
+<span class="elementor-divider-separator">
+</span>
+</div>
+</div>
+</div>
+<div class="elementor-element elementor-element-8a2d5a6 elementor-widget elementor-widget-heading" data-id="8a2d5a6" data-element_type="widget" data-widget_type="heading.default">
+<div class="elementor-widget-container">
+<h2 class="elementor-heading-title elementor-size-default">There’s a great big coffee world waiting for you. And it tastes great!</h2> </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="elementor-section elementor-inner-section elementor-element elementor-element-440d27a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="440d27a" data-element_type="section">
+ <div class="elementor-container elementor-column-gap-no">
+<div style='width:46%' class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-6c86134" data-id="6c86134" data-element_type="column">
+
+</div>
+<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-b9c08b7" data-id="b9c08b7" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+
+
+<div class="elementor-element elementor-element-6bc1d0b e-grid-align-left e-grid-align-center elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="6bc1d0b" data-element_type="widget" data-widget_type="social-icons.default">
+<div class="elementor-widget-container">
+<div class="elementor-social-icons-wrapper elementor-grid">
+<div class="elementor-grid-item">
+<a class="elementor-icon elementor-social-icon elementor-social-icon-Facebook Icon elementor-repeater-item-c5c3724" href="https://www.facebook.com/" target="_blank">
+<span class="elementor-screen-only">Facebook Icon</span>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" viewBox="0 0 512 512" width="100%" xml:space="preserve"><path d="M374.244,285.825l14.105,-91.961l-88.233,0l0,-59.677c0,-25.159 12.325,-49.682 51.845,-49.682l40.116,0l0,-78.291c0,0 -36.407,-6.214 -71.213,-6.214c-72.67,0 -120.165,44.042 -120.165,123.775l0,70.089l-80.777,0l0,91.961l80.777,0l0,222.31c16.197,2.541 32.798,3.865 49.709,3.865c16.911,0 33.511,-1.324 49.708,-3.865l0,-222.31l74.128,0Z" style="fill-rule:nonzero;"></path></svg> </a>
+</div>
+<div class="elementor-grid-item">
+<a class="elementor-icon elementor-social-icon elementor-social-icon-Twitter Icon elementor-repeater-item-b118299" href="https://twitter.com/" target="_blank">
+<span class="elementor-screen-only">Twitter Icon</span>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" viewBox="0 0 512 512" width="512px" xml:space="preserve"><path d="M492,109.5c-17.4,7.7-36,12.9-55.6,15.3c20-12,35.4-31,42.6-53.6c-18.7,11.1-39.4,19.2-61.5,23.5  C399.8,75.8,374.6,64,346.8,64c-53.5,0-96.8,43.4-96.8,96.9c0,7.6,0.8,15,2.5,22.1C172,179,100.6,140.4,52.9,81.7  c-8.3,14.3-13.1,31-13.1,48.7c0,33.6,17.1,63.3,43.1,80.7C67,210.7,52,206.3,39,199c0,0.4,0,0.8,0,1.2c0,47,33.4,86.1,77.7,95  c-8.1,2.2-16.7,3.4-25.5,3.4c-6.2,0-12.3-0.6-18.2-1.8c12.3,38.5,48.1,66.5,90.5,67.3c-33.1,26-74.9,41.5-120.3,41.5  c-7.8,0-15.5-0.5-23.1-1.4C62.9,432,113.8,448,168.4,448C346.6,448,444,300.3,444,172.2c0-4.2-0.1-8.4-0.3-12.5  C462.6,146,479,128.9,492,109.5z"></path></svg> </a>
+</div>
+<div class="elementor-grid-item">
+<a class="elementor-icon elementor-social-icon elementor-social-icon-Pinterest Icon elementor-repeater-item-653b2c4" href="https://www.pinterest.com/" target="_blank">
+<span class="elementor-screen-only">Pinterest Icon</span>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" viewBox="0 0 512 512" width="100%" xml:space="preserve"><path d="M255.998,0.001c-141.384,0 -255.998,114.617 -255.998,255.998c0,108.456 67.475,201.171 162.707,238.471c-2.24,-20.255 -4.261,-51.405 0.889,-73.518c4.65,-19.978 30.018,-127.248 30.018,-127.248c0,0 -7.659,-15.334 -7.659,-38.008c0,-35.596 20.632,-62.171 46.323,-62.171c21.839,0 32.391,16.399 32.391,36.061c0,21.966 -13.984,54.803 -21.203,85.235c-6.03,25.482 12.779,46.261 37.909,46.261c45.503,0 80.477,-47.976 80.477,-117.229c0,-61.293 -44.045,-104.149 -106.932,-104.149c-72.841,0 -115.597,54.634 -115.597,111.095c0,22.004 8.475,45.596 19.052,58.421c2.09,2.535 2.398,4.758 1.776,7.343c-1.945,8.087 -6.262,25.474 -7.111,29.032c-1.117,4.686 -3.711,5.681 -8.561,3.424c-31.974,-14.884 -51.963,-61.627 -51.963,-99.174c0,-80.755 58.672,-154.915 169.148,-154.915c88.806,0 157.821,63.279 157.821,147.85c0,88.229 -55.629,159.232 -132.842,159.232c-25.94,0 -50.328,-13.476 -58.674,-29.394c0,0 -12.838,48.878 -15.95,60.856c-5.782,22.237 -21.382,50.109 -31.818,67.11c23.955,7.417 49.409,11.416 75.797,11.416c141.389,0 256.003,-114.612 256.003,-256.001c0,-141.381 -114.614,-255.998 -256.003,-255.998Z" style="fill-rule:nonzero;"></path></svg> </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+ </div>
+</section>
+<div class="elementor-element elementor-element-a8929c1 elementor-widget elementor-widget-text-editor" data-id="a8929c1" data-element_type="widget" data-widget_type="text-editor.default">
+<div class="elementor-widget-container">
+<div class="elementor-text-editor elementor-clearfix">Copyright © 2021 Home Barista |Powered by Home Barista</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<footer class="site-footer" id="colophon" itemtype="https://schema.org/WPFooter" itemscope="itemscope" itemid="#colophon">
+</footer>
+<div class="ast-search-box full-screen" id="ast-seach-full-screen-form">
+<span id="close" class="close"><span class="ast-icon icon-close"></span></span>
+
+</div>
+</div>
+</div>
+<div class="cli-modal" data-nosnippet="true" id="cliSettingsPopup" tabindex="-1"
+role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
+<div class="cli-modal-dialog" role="document">
+<div class="cli-modal-content cli-bar-popup">
+<button type="button" class="cli-modal-close" id="cliModalClose">
+<svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
+<span class="wt-cli-sr-only">Close</span>
+</button>
+<div class="cli-modal-body">
+<div class="cli-container-fluid cli-tab-container">
+<div class="cli-row">
+<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+<div class="cli-privacy-overview">
+<h4>Privacy Overview</h4> <div class="cli-privacy-content">
+<div class="cli-privacy-content-text">This website uses cookies to improve your experience while you navigate through the website. Out of these, the cookies that are categorized as necessary are stored on your browser as they are essential for the working of basic functionalities of the ...</div>
+</div>
+<a class="cli-privacy-readmore" aria-label="Show more" tabindex="0" role="button" data-readmore-text="Show more" data-readless-text="Show less"></a> </div>
+</div>
+<div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
+<div class="cli-tab-section">
+<div class="cli-tab-header">
+<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab">
+Necessary </a>
+<div class="wt-cli-necessary-checkbox">
+<input type="checkbox" class="cli-user-preference-checkbox" id="wt-cli-checkbox-necessary" data-id="checkbox-necessary" checked="checked">
+<label class="form-check-label" for="wt-cli-checkbox-necessary">Necessary</label>
+</div>
+<span class="cli-necessary-caption">Always Enabled</span> </div>
+<div class="cli-tab-content">
+<div class="cli-tab-pane cli-fade" data-id="necessary">
+<p>Necessary cookies are absolutely essential for the website to function properly. These cookies ensure basic functionalities and security features of the website, anonymously.
+</p><table class="cookielawinfo-row-cat-table cookielawinfo-winter"><thead><tr><th class="cookielawinfo-column-1">Cookie</th><th class="cookielawinfo-column-3">Duration</th><th class="cookielawinfo-column-4">Description</th></tr></thead><tbody><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checbox-analytics</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookie is used to store the user consent for the cookies in the category "Analytics".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checbox-functional</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">The cookie is set by GDPR cookie consent to record the user consent for the cookies in the category "Functional".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checbox-others</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookie is used to store the user consent for the cookies in the category "Other.</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-advertisement</td><td class="cookielawinfo-column-3">1 year</td><td class="cookielawinfo-column-4">The cookie is set by GDPR cookie consent to record the user consent for the cookies in the category "Advertisement".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-necessary</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookies is used to store the user consent for the cookies in the category "Necessary".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-performance</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookie is used to store the user consent for the cookies in the category "Performance".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">elementor</td><td class="cookielawinfo-column-3">never</td><td class="cookielawinfo-column-4">This cookie is used by the website's WordPress theme. It allows the website owner to implement or change the website's content in real-time.</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">viewed_cookie_policy</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">The cookie is set by the GDPR Cookie Consent plugin and is used to store whether or not user has consented to the use of cookies. It does not store any personal data.</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">wordpress_test_cookie</td><td class="cookielawinfo-column-3">session</td><td class="cookielawinfo-column-4">This cookie is used to check if the cookies are enabled on the users' browser.</td></tr></tbody></table><p></p>
+</div>
+</div>
+</div>
+<div class="cli-tab-section">
+<div class="cli-tab-header">
+<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="functional" data-toggle="cli-toggle-tab">
+Functional </a>
+<div class="cli-switch">
+<input type="checkbox" id="wt-cli-checkbox-functional" class="cli-user-preference-checkbox" data-id="checkbox-functional">
+<label for="wt-cli-checkbox-functional" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Functional</span></label>
+</div> </div>
+<div class="cli-tab-content">
+<div class="cli-tab-pane cli-fade" data-id="functional">
+<p>Functional cookies help to perform certain functionalities like sharing the content of the website on social media platforms, collect feedbacks, and other third-party features.
+</p>
+</div>
+</div>
+</div>
+<div class="cli-tab-section">
+<div class="cli-tab-header">
+<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="performance" data-toggle="cli-toggle-tab">
+Performance </a>
+<div class="cli-switch">
+<input type="checkbox" id="wt-cli-checkbox-performance" class="cli-user-preference-checkbox" data-id="checkbox-performance">
+<label for="wt-cli-checkbox-performance" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Performance</span></label>
+</div> </div>
+<div class="cli-tab-content">
+<div class="cli-tab-pane cli-fade" data-id="performance">
+<p>Performance cookies are used to understand and analyze the key performance indexes of the website which helps in delivering a better user experience for the visitors.
+</p>
+</div>
+</div>
+</div>
+<div class="cli-tab-section">
+<div class="cli-tab-header">
+<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="analytics" data-toggle="cli-toggle-tab">
+Analytics </a>
+<div class="cli-switch">
+<input type="checkbox" id="wt-cli-checkbox-analytics" class="cli-user-preference-checkbox" data-id="checkbox-analytics">
+<label for="wt-cli-checkbox-analytics" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Analytics</span></label>
+</div> </div>
+<div class="cli-tab-content">
+<div class="cli-tab-pane cli-fade" data-id="analytics">
+<p>Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics the number of visitors, bounce rate, traffic source, etc.
+</p>
+</div>
+</div>
+</div>
+<div class="cli-tab-section">
+<div class="cli-tab-header">
+<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="advertisement" data-toggle="cli-toggle-tab">
+Advertisement </a>
+<div class="cli-switch">
+<input type="checkbox" id="wt-cli-checkbox-advertisement" class="cli-user-preference-checkbox" data-id="checkbox-advertisement">
+<label for="wt-cli-checkbox-advertisement" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Advertisement</span></label>
+</div> </div>
+<div class="cli-tab-content">
+<div class="cli-tab-pane cli-fade" data-id="advertisement">
+<p>Advertisement cookies are used to provide visitors with relevant ads and marketing campaigns. These cookies track visitors across websites and collect information to provide customized ads.
+</p>
+</div>
+</div>
+</div>
+<div class="cli-tab-section">
+<div class="cli-tab-header">
+<a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="others" data-toggle="cli-toggle-tab">
+Others </a>
+<div class="cli-switch">
+<input type="checkbox" id="wt-cli-checkbox-others" class="cli-user-preference-checkbox" data-id="checkbox-others">
+<label for="wt-cli-checkbox-others" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Others</span></label>
+</div> </div>
+<div class="cli-tab-content">
+<div class="cli-tab-pane cli-fade" data-id="others">
+<p>Other uncategorized cookies are those that are being analyzed and have not been classified into a category as yet.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cli-modal-footer">
+<div class="wt-cli-element cli-container-fluid cli-tab-container">
+<div class="cli-row">
+<div class="cli-col-12 cli-align-items-stretch cli-px-0">
+<div class="cli-tab-footer wt-cli-privacy-overview-actions">
+<a id="wt-cli-privacy-save-btn" role="button" tabindex="0" data-cli-action="accept" class="wt-cli-privacy-btn cli_setting_save_button wt-cli-privacy-accept-btn cli-btn">SAVE &amp; ACCEPT</a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cli-modal-backdrop cli-fade cli-settings-overlay" style="display: block;"></div>
+<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay" style="display: block;"></div>
+<!--googleon: all--><a id="ast-scroll-top" class="ast-scroll-top-icon ast-scroll-to-top-right" data-on-devices="both" style="display: none;">
+<span class="ast-icon icon-arrow"></span> <span class="screen-reader-text">Scroll to Top</span>
+</a>
+<link data-minify="1" rel="stylesheet" href="./index_files/stylepublic.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" media="all" property="stylesheet">
+<link data-minify="1" rel="stylesheet" href="./index_files/style.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" media="all" property="stylesheet">
+<link rel="stylesheet" href="./index_files/wpforms-base.min.css" data-rocket-async="style" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;" media="all" property="stylesheet">
+<script id="astra-theme-js-js-extra">
+var astra = {"break_point":"921","isRtl":"","is_archive":"","edit_post_url":"https:\/\/roastercoffees.com\/wp-admin\/post.php?post={{id}}&action=edit","ajax_url":"https:\/\/roastercoffees.com\/wp-admin\/admin-ajax.php","infinite_count":"2","astinfiniteposttype":"page","infinite_total":"0","pagination":"number","infinite_scroll_event":"scroll","infinite_nonce":"4f1bfa7c8d","no_more_post_message":"No more posts to show.","grid_layout":"1","site_url":"https:\/\/roastercoffees.com","show_comments":"Show Comments","masonryEnabled":"","blogMasonryBreakPoint":"921"};
+</script>
+<script defer="defer" src="./index_files/frontend.min.js.download" id="astra-theme-js-js"></script>
+<script id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script id="rocket-preload-links-js-extra">
+
+</script>
+<script id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script id="astra-addon-js-js-extra">
+var astraAddon = {"sticky_active":"","svgIconClose":"<span class=\"ast-icon icon-close\"><\/span>","header_main_stick":"","header_above_stick":"0","header_below_stick":"0","stick_header_meta":"enabled","header_main_stick_meta":"on","header_above_stick_meta":"","header_below_stick_meta":"","sticky_header_on_devices":"both","sticky_header_style":"none","sticky_hide_on_scroll":"0","break_point":"921","tablet_break_point":"921","mobile_break_point":"544","header_main_shrink":"","header_logo_width":"","responsive_header_logo_width":{"desktop":"210","tablet":"210","mobile":"160"},"stick_origin_position":"","site_layout":"ast-full-width-layout","site_content_width":"1240","site_layout_padded_width":"1200","site_layout_box_width":"1200","header_builder_active":"1","component_limit":"10","is_header_builder_active":"1"};
+</script>
+<script data-minify="1" defer="defer" src="./index_files/astra-addon-60e3008d9a1d90-09527867.js.download" id="astra-addon-js-js"></script>
+<script defer="defer" src="./index_files/jquery.smartmenus.min.js.download" id="smartmenus-js"></script>
+<script defer="defer" src="./index_files/core.min.js.download" id="jquery-ui-core-js"></script>
+<script defer="defer" src="./index_files/controlgroup.min.js.download" id="jquery-ui-controlgroup-js"></script>
+<script defer="defer" src="./index_files/checkboxradio.min.js.download" id="jquery-ui-checkboxradio-js"></script>
+<script defer="defer" src="./index_files/button.min.js.download" id="jquery-ui-button-js"></script>
+<script defer="defer" src="./index_files/tooltip.min.js.download" id="jquery-ui-tooltip-js"></script>
+<script defer="defer" src="./index_files/datepicker.min.js.download" id="jquery-ui-datepicker-js"></script>
+<script defer="defer" src="./index_files/mouse.min.js.download" id="jquery-ui-mouse-js"></script>
+<script defer="defer" src="./index_files/slider.min.js.download" id="jquery-ui-slider-js"></script>
+<script data-minify="1" defer="defer" src="./index_files/jQuery.stringify.js.download" id="query-stringify-js"></script>
+<script data-minify="1" defer="defer" src="./index_files/jquery.validate.js.download" id="cp_calculatedfieldsf_validate_script-js"></script>
+<script id="cp_calculatedfieldsf_builder_script-js-extra">
+var cp_calculatedfieldsf_fbuilder_config_1 = {"obj":"{\"pub\":true,\"identifier\":\"_1\",\"messages\":{\"required\":\"This field is required.\",\"email\":\"Please enter a valid email address.\",\"datemmddyyyy\":\"Please enter a valid date with this format(mm\\\/dd\\\/yyyy)\",\"dateddmmyyyy\":\"Please enter a valid date with this format(dd\\\/mm\\\/yyyy)\",\"number\":\"Please enter a valid number.\",\"digits\":\"Please enter only digits.\",\"max\":\"Please enter a value less than or equal to {0}.\",\"min\":\"Please enter a value greater than or equal to {0}.\",\"previous\":\"Previous\",\"next\":\"Next\",\"pageof\":\"Page {0} of {0}\",\"minlength\":\"Please enter at least {0} characters.\",\"maxlength\":\"Please enter no more than {0} characters.\",\"equalTo\":\"Please enter the same value again.\",\"accept\":\"Please enter a value with a valid extension.\",\"upload_size\":\"The file you've chosen is too big, maximum is {0} kB.\",\"phone\":\"Invalid phone number.\",\"currency\":\"Please enter a valid currency value.\"}}"};
+var cp_calculatedfieldsf_fbuilder_config_2 = {"obj":"{\"pub\":true,\"identifier\":\"_2\",\"messages\":{\"required\":\"This field is required.\",\"email\":\"Please enter a valid email address.\",\"datemmddyyyy\":\"Please enter a valid date with this format(mm\\\/dd\\\/yyyy)\",\"dateddmmyyyy\":\"Please enter a valid date with this format(dd\\\/mm\\\/yyyy)\",\"number\":\"Please enter a valid number.\",\"digits\":\"Please enter only digits.\",\"max\":\"Please enter a value less than or equal to {0}.\",\"min\":\"Please enter a value greater than or equal to {0}.\",\"previous\":\"Previous\",\"next\":\"Next\",\"pageof\":\"Page {0} of {0}\",\"minlength\":\"Please enter at least {0} characters.\",\"maxlength\":\"Please enter no more than {0} characters.\",\"equalTo\":\"Please enter the same value again.\",\"accept\":\"Please enter a value with a valid extension.\",\"upload_size\":\"The file you've chosen is too big, maximum is {0} kB.\",\"phone\":\"Invalid phone number.\",\"currency\":\"Please enter a valid currency value.\"}}"};
+</script>
+<script data-minify="1" defer="defer" src="./index_files/all.js.download" id="cp_calculatedfieldsf_builder_script-js"></script>
+<script defer="defer" src="./index_files/jquery.smooth-scroll.min.js.download" id="jquery-smooth-scroll-js"></script>
+<script defer="defer" src="./index_files/js.cookie.min.js.download" id="js-cookie-js"></script>
+<script defer="defer" src="./index_files/jquery.sticky-kit.min.js.download" id="jquery-sticky-kit-js"></script>
+<script id="ez-toc-js-js-extra">
+var ezTOC = {"smooth_scroll":"1","visibility_hide_by_default":"","width":"auto","scroll_offset":"30"};
+</script>
+<script defer="defer" src="./index_files/front.min.js.download" id="ez-toc-js-js"></script>
+<script defer="defer" src="./index_files/webpack-pro.runtime.min.js.download" id="elementor-pro-webpack-runtime-js"></script>
+<script defer="defer" src="./index_files/webpack.runtime.min.js.download" id="elementor-webpack-runtime-js"></script>
+<script defer="defer" src="./index_files/frontend-modules.min.js.download" id="elementor-frontend-modules-js"></script>
+<script defer="defer" src="./index_files/jquery.sticky.min.js.download" id="elementor-sticky-js"></script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/roastercoffees.com\/wp-admin\/admin-ajax.php","nonce":"9f5ee96525","urls":{"assets":"https:\/\/roastercoffees.com\/wp-content\/plugins\/elementor-pro\/assets\/"},"i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/roastercoffees.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script defer="defer" src="./index_files/frontend.min.js(1).download" id="elementor-pro-frontend-js"></script>
+<script defer="defer" src="./index_files/dialog.min.js.download" id="elementor-dialog-js"></script>
+<script defer="defer" src="./index_files/waypoints.min.js.download" id="elementor-waypoints-js"></script>
+<script defer="defer" src="./index_files/share-link.min.js.download" id="share-link-js"></script>
+<script defer="defer" src="./index_files/swiper.min.js.download" id="swiper-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false,"isImprovedAssetsLoading":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"3.1.4","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"form-submissions":true},"urls":{"assets":"https:\/\/roastercoffees.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":6884,"title":"Wonderful%20Coffee%20Tools%20-%20ROASTER%20COFFEES","excerpt":"","featuredImage":false}};
+</script>
+<script defer="defer" src="./index_files/frontend.min.js(2).download" id="elementor-frontend-js"></script>
+<script defer="defer" src="./index_files/preloaded-elements-handlers.min.js.download" id="pro-preloaded-elements-handlers-js"></script>
+<script defer="defer" src="./index_files/preloaded-elements-handlers.min.js(1).download" id="preloaded-elements-handlers-js"></script>
+<script defer="defer" src="./index_files/underscore.min.js.download" id="underscore-js"></script>
+<script id="wp-util-js-extra">
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+</script>
+<script defer="defer" src="./index_files/wp-util.min.js.download" id="wp-util-js"></script>
+<script id="wpforms-elementor-js-extra">
+var wpformsElementorVars = {"captcha_provider":"recaptcha","recaptcha_type":"v2"};
+</script>
+<script defer="defer" src="./index_files/frontend.min.js(3).download" id="wpforms-elementor-js"></script>
+<script defer="defer" src="./index_files/jquery.validate.min.js.download" id="wpforms-validation-js"></script>
+<script defer="defer" src="./index_files/mailcheck.min.js.download" id="wpforms-mailcheck-js"></script>
+<script data-minify="1" defer="defer" src="./index_files/wpforms.js.download" id="wpforms-js"></script>
+<script>
+			/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+			</script>
+<script type="text/javascript">
+
+</script>
+<script>window.lazyLoadOptions={elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async="" src="./index_files/lazyload.min.js.download"></script> <script>"use strict";var wprRemoveCPCSS=function wprRemoveCPCSS(){var elem;document.querySelector('link[data-rocket-async="style"][rel="preload"]')?setTimeout(wprRemoveCPCSS,200):(elem=document.getElementById("rocket-critical-css"))&&"remove"in elem&&elem.remove()};window.addEventListener?window.addEventListener("load",wprRemoveCPCSS):window.attachEvent&&window.attachEvent("onload",wprRemoveCPCSS);</script>
+
+
+<span id="elementor-device-mode" class="elementor-screen-only"></span><script charset="UTF-8" src="./index_files/saved_resource"></script><div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div></body>
+</html>
